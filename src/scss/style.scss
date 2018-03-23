@@ -1,4 +1,9 @@
 
-body {
-    background-color: aqua;
+@font-face{
+   font-family: 'Myria-Pro', 'MyriadArabic';
+   src: url('../fonts/MyriadProRegular.ttf'),('../fonts/MyriadArabic-Regular.otf');
+}
+
+body{
+    font-family: 'Myria-Pro', 'MyriadArabic',Georgia, 'Times New Roman', Times, serif;
 }
