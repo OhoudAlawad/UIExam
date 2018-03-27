@@ -14,7 +14,7 @@ body{
     border: none;
 }
 
-header {
+.header {
     background-image: url(../images/HBg.jpg);
     background-position: center center;
     background-size: cover;
@@ -22,8 +22,9 @@ header {
     
 }
 
-header .overlay {
+.header .overlay {
     background: rgba(243,244,245,0.40);
     height: 100vh;
     
 }
+
