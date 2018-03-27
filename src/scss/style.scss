@@ -7,3 +7,23 @@
 body{
     font-family: 'Myria-Pro', 'MyriadArabic',Georgia, 'Times New Roman', Times, serif;
 }
+
+.custom-navbar {
+    margin-bottom: auto;
+    background: transparent;
+    border: none;
+}
+
+header {
+    background-image: url(../images/HBg.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    
+}
+
+header .overlay {
+    background: rgba(243,244,245,0.40);
+    height: 100vh;
+    
+}
