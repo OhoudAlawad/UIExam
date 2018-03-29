@@ -118,3 +118,35 @@ h1{
 .images>img{
     z-index: -1;
 }
+
+.feature1{
+    
+    background-color: $primary-color;
+    padding-left: 225px;
+    padding-right: 225px;
+    padding-top: 122px;
+    padding-bottom: 160px;
+    
+}
+hr.hr{
+    border-bottom: 1px solid rgba($color: #26272d, $alpha: 0.05);
+    width: 1170px;
+}
+
+.custom-heading{
+     font-family: 'Myria-Pro';
+    font-size: 26px;
+    color: $second-color;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+.paragraph{
+    font-family:'MyriadArabic';
+    font-size: 18px;
+    line-height: 2;
+    color: $p-color;
+}
+.column>p.paragraph:first-of-type{
+    margin-bottom: 40px;
+}
+
