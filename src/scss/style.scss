@@ -131,6 +131,8 @@ h1{
 hr.hr{
     border-bottom: 1px solid rgba($color: #26272d, $alpha: 0.05);
     width: 1170px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .custom-heading{
@@ -145,6 +147,7 @@ hr.hr{
     font-size: 18px;
     line-height: 2;
     color: $p-color;
+    max-width: 489px;
 }
 .column>p.paragraph:first-of-type{
     margin-bottom: 40px;
