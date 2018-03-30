@@ -12,6 +12,7 @@ body{
 body>.container-fluid{
     padding-left: 0;
     padding-right: 0;
+    overflow: hidden;
 }
 .custom-navbar {
     margin-bottom: 80px;
@@ -175,6 +176,7 @@ hr.hr{
     font-size: 42px;
     margin-top: 224px;
     max-width: 486px;
+    line-height: 1.5;
 }
 
 .passcode{
@@ -184,7 +186,9 @@ hr.hr{
 }
 .m-passcode>img{
     margin-top: 86px;
-    max-width: 102%;;
+    position: relative;
+    left: 28%;
+   
 }
 .passcode .btn-app{
     padding: 18px 26px 16px 19px;
@@ -207,4 +211,34 @@ color: $primary-color;
 }
 .feature3{
     background-color: $primary-color;
+    padding-top: 207px;
+    padding-bottom: 198px;
+}
+.feature3 > .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.feature3  img{
+    position: relative;
+    left: 9%;
+}
+
+.feature3  .column{
+    padding-right: 75px;
+}
+
+.feature3 .heading2{
+    margin-top: 0;
+}
+.p-small{
+    font-family: 'MyriadArabic';
+    margin-top: 100px;
+    margin-left: 31%;
+    color: $second-color;
+
+}
+ul.list-inline.text-right{
+    margin-left: 28%;
+    margin-top: 31px;
 }
