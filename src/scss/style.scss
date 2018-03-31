@@ -239,3 +239,57 @@ ul.list-inline.text-right{
     margin-left: 28%;
     margin-top: 31px;
 }
+.feature4{
+    background-color: $third-color;
+    position: relative;
+}
+.feature4 .heading2{
+    margin-top: 142px;
+    max-width: 100%;
+}
+.feature4 .r-margin .col-xs-12{
+    position: relative;
+}
+hr.sm-hr{
+    border-top: 2px solid $bg-button;
+    width: 50px;
+    margin-top: 48px;
+    margin-bottom: 46px;
+}
+h6.h-small{
+    color: $p-color;
+    font-family: 'MyriadArabic';
+    margin-bottom: 45px;
+}
+.landing-screen {
+    
+   position: relative;
+   
+}
+img.L-S4{
+    position: relative;
+    left: 6%;
+}
+
+img.L-S3 {
+    position: relative;
+    left: 26%;
+}
+
+img.L-S {
+    position: relative;
+    left: 44%;
+}
+
+img.L-S1 {
+    position: absolute;
+    top: 10%;
+    right: 81.1%;
+}
+
+img.L-S2 {
+    position: absolute;
+    top: 10%;
+    left: 13%;
+}
+
