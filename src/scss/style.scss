@@ -337,7 +337,12 @@ button.btn.Form-submit {
 .Form-submit >span{
     padding-left: 42px;
 }
-
+label#email-error {
+    position: absolute;
+    bottom: 30%;
+    left: 45%;
+    color: $g-color;
+}
 .btn-app2{
     font-family: 'MyriadArabic';
     font-size: 23px;
