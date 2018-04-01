@@ -293,3 +293,79 @@ img.L-S2 {
     left: 13%;
 }
 
+.GitApp{
+    background-color: $third-color;
+    position: relative;
+    padding-bottom: 131px;
+}
+
+.GitApp .custom-heading{
+    font-size: 42px;
+}
+.GitApp  h6.h-small:first-child {
+    color: rgba($h-color,0.50);
+}
+.GitApp  h6.h-small:last-of-type {
+    color: rgba($h-color,0.30);
+}
+input.invite {
+    font-family: 'MyriadArabic';
+    font-size: 16px;
+    background-color: rgba($third-color,0.20);
+    border-radius: 25px;
+    border: 1px solid $brder-color;
+    width: 502px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 69px;
+}
+button.btn.Form-submit {
+    font-family: 'MyriadArabic';
+    font-size: 16px;
+    color: $primary-color;
+    background-color: #6fc754;
+    border-radius: 21px;
+    width: 164px;
+    height: 42px;
+    padding-right: 31px;
+    padding-left: 24px;
+    position: absolute;
+    left: 552px;
+    bottom: 140px;
+}
+
+.Form-submit >span{
+    padding-left: 42px;
+}
+.btn-app2{
+    font-family: 'MyriadArabic';
+    font-size: 23px;
+    color: $primary-color;
+    background-color: #131315;
+    border-radius: 50px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    padding-right: 27px;
+    padding-left: 71px;
+    position: absolute;
+    left:calc(50% - 122px);
+    display: block;
+    
+    
+}
+.m-r{
+    line-height: 25px;
+    display: inline-block;
+    margin-right: 18px;
+    text-align: right;
+}
+.btn-app2 .d-f{
+    font-size:12px;
+    
+}
+
+i.fa.fa-apple.fa-2x {
+    
+    position: relative;
+   bottom: 4px;
+}
