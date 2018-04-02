@@ -375,3 +375,86 @@ i.fa.fa-apple.fa-2x {
     position: relative;
    bottom: 4px;
 }
+
+.customers{
+    background-color: $primary-color;
+    position: relative;
+    height: 750px;
+}
+#carousel-customers {
+    padding-top: 132px;
+    padding-bottom: 128px ;
+   
+    
+}
+#carousel-customers .carousel-control {
+    background: none;
+    color: rgba($controller,0.20);
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 175px;
+}
+#carousel-customers .carousel-control.left {
+    right: -60px;
+}
+#carousel-customers .carousel-control.right {
+    left: -60px;
+}
+#carousel-customers .carousel-indicators {
+    position: relative;
+    //bottom: 64%;
+    margin-bottom: 75px;
+    //z-index: 0;
+
+}
+#carousel-customers .carousel-indicators li {
+    width: 112px;
+    height: 112px;
+    //margin-bottom: 75px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+#carousel-customers .carousel-indicators li:nth-child(2){
+    margin-right: 130px;
+    margin-left: 130px;
+}
+
+#carousel-customers .carousel-indicators .active {
+    background: #333333;
+    width: 144px;
+    height: 144px;
+    border-radius: 100px;
+    opacity: 1;
+    overflow: hidden;
+}
+
+/*.carousel-inner .carousel-p{
+    //margin-top: 100px;
+    position: relative;
+    bottom: -126px;
+} */
+.h1-customer{
+    font-size: 32px;
+    color: $second-color;
+    margin-bottom: 56px;
+}
+
+.p-customer{
+    max-width: 100%;
+    margin-bottom: 63px;
+}
+
+.rating .active{
+    color: #f2bc3b;
+}
+
+.carousel-p .p-small{
+    margin-left: 0;
+    margin-top: 72px;
+    margin-bottom: 0;
+}
