@@ -633,3 +633,25 @@ i.fa.fa-check{
     z-index: 1;
     box-shadow: -10px 10px 23px 0px rgba(61, 61, 62, 0.15);
 }
+// end plan section
+
+// start subscribe section
+.subscribe{
+position: relative;
+}
+
+.subscribe button.btn.Form-submit{
+    left: 324px;
+    bottom: 177px;
+}
+.subscribe input.invite{
+padding-right: 17px;
+border-color: $border3;
+color: $controller;
+}
+
+.subscribe .p-choose{
+    margin-bottom: 85px;
+}
+
+// end subscribe section
