@@ -379,7 +379,6 @@ i.fa.fa-apple.fa-2x {
 .customers{
     background-color: $primary-color;
     position: relative;
-    height: 750px;
 }
 #carousel-customers {
     padding-top: 132px;
@@ -402,15 +401,12 @@ i.fa.fa-apple.fa-2x {
 }
 #carousel-customers .carousel-indicators {
     position: relative;
-    //bottom: 64%;
     margin-bottom: 75px;
-    //z-index: 0;
 
 }
 #carousel-customers .carousel-indicators li {
     width: 112px;
     height: 112px;
-    //margin-bottom: 75px;
     cursor: pointer;
     border: none;
     border-radius: 50px;
@@ -433,11 +429,6 @@ i.fa.fa-apple.fa-2x {
     overflow: hidden;
 }
 
-/*.carousel-inner .carousel-p{
-    //margin-top: 100px;
-    position: relative;
-    bottom: -126px;
-} */
 .h1-customer{
     font-size: 32px;
     color: $second-color;
