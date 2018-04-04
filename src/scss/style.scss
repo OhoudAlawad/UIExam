@@ -693,7 +693,7 @@ color: $controller;
     position: absolute;
     top: 52%;
 }
-.subscribe hr.hr,footer hr.hr{
+.subscribe hr.hr,.footer hr.hr{
     margin: 0;
    // overflow: hidden;
 }
@@ -704,6 +704,10 @@ color: $controller;
 .footer{
     background-color: $primary-color;
     padding-top: 89px;
+    padding-bottom: 89px;
+}
+.footer .col-xs-12.col-md-6.text-left {
+    padding-left: 190px;
 }
 .footer .paragraph{
     font-size: 14px;
@@ -733,5 +737,25 @@ color: $controller;
 .logo-btn:hover,.logo-btn:active,.logo-btn:focus,.logo-btn:active:focus{
     color:unset;
     outline: none;
+}
+
+.footer h6{
+    font-family: 'Myria-Pro';
+    color: $second-color;
+    margin-bottom: 30px;
+}
+
+.footer a{
+    font-family: 'MyriadArabic';
+    font-size: 16px;
+    color: $p-color;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+.footer a:hover,.footer a:active,.footer a:focus,.footer a:active:focus{
+    color:rgba($p-color,0.70);
+}
+.footer li{
+    margin-bottom: 28px;
 }
 //end footer section
