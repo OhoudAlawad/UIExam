@@ -681,6 +681,10 @@ color: $controller;
 .subscribe .p-choose{
     margin-bottom: 85px;
 }
+.subscribe label#email-error {
+    position: absolute;
+    top: 52%;
+}
 /*.subscribe hr.hr{
     margin: 0;
     overflow: hidden;

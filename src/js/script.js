@@ -9,4 +9,8 @@ $(document).ready(function() {
         $("#InviteForm").validate();
     });
 
+    $(function () {
+        $("#SubscribeForm").validate();
+    });
+
 });
