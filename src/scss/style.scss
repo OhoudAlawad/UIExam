@@ -374,7 +374,14 @@ label#email-error {
     position: absolute;
     left:calc(50% - 122px);
     display: block;
+    transition-property: background-color,color;
+    transition-duration: 0.3s
     
+    
+}
+.btn-app2:hover,.btn-app2:focus,.btn-app2:active,.btn-app2:focus:active{
+    background-color: transparent;
+    border-color: #131315;
     
 }
 .m-r{
@@ -665,6 +672,7 @@ i.fa.fa-check{
 
 // start subscribe section
 .subscribe{
+    background-color: $primary-color;
 position: relative;
 }
 
@@ -685,9 +693,45 @@ color: $controller;
     position: absolute;
     top: 52%;
 }
-/*.subscribe hr.hr{
+.subscribe hr.hr,footer hr.hr{
     margin: 0;
-    overflow: hidden;
-}*/
+   // overflow: hidden;
+}
 
 // end subscribe section
+
+// footer section
+.footer{
+    background-color: $primary-color;
+    padding-top: 89px;
+}
+.footer .paragraph{
+    font-size: 14px;
+    margin-top: 35px;
+    margin-bottom: 60px;
+    max-width: 100%;
+}
+.social-links{
+    margin-top: 40px;
+    margin-bottom: 130px;
+}
+.social-links a{
+    color:rgba($second-color,0.30);
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+.social-links a:hover,.social-links a:active,.social-links a:focus,.social-links a:active:focus{
+    outline: none;
+    color:rgba($second-color,0.50);
+}
+.social-links li{
+    margin-right: 12px;
+}
+.logo-btn{
+    padding: 0;
+}
+.logo-btn:hover,.logo-btn:active,.logo-btn:focus,.logo-btn:active:focus{
+    color:unset;
+    outline: none;
+}
+//end footer section
