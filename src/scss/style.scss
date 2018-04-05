@@ -777,6 +777,8 @@ color: $controller;
 
 //الشاشات الصغيرة جداً
 @media(max-width:767px) {
+    
+    
     .brand{
         bottom: 68%;
     }
@@ -788,12 +790,15 @@ color: $controller;
 
     .video.custom-btn {
         position: relative;
-        left: 0%;
+        left: 23%;
         padding-right: 30px;
         padding-top: 15px;
     padding-bottom: 15px;
         margin-top: -43px;
         margin-bottom: 15px;
+    }
+    video {
+        max-width: 174px;
     }
     
     .custom-btn>i.fa {
@@ -818,15 +823,10 @@ color: $controller;
         padding-left: 0;
     }
 
-    
-
-    .header .images>img {
-        max-width: 54%;
-    }
     .video.custom-btn {
         left: 14%;
-        margin-top: -4px;
-        margin-bottom: 10px;
+        //margin-top: -4px;
+       // margin-bottom: 10px;
     }
     video{
         width: 200px;
@@ -840,6 +840,9 @@ color: $controller;
 /* الشاشات الصغيرة والصغيرة جدا */
 @media(max-width:991px){
     
+    .header,.header .overlay{
+        height: 100vh;
+    }
 
     h1{
         font-size: 40px;
