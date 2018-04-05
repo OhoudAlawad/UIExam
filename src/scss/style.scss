@@ -780,16 +780,26 @@ color: $controller;
     .brand{
         bottom: 68%;
     }
+    
+
+    .header .images>img {
+        max-width: 81%;
+    }
+
     .video.custom-btn {
-        padding-top: 18px;
-        padding-bottom: 18px;
-        padding-right: 75px;
-        margin-top: -83px;
-        margin-bottom: 55px;
         position: relative;
         left: 0%;
+        padding-right: 30px;
+        padding-top: 15px;
+    padding-bottom: 15px;
+        margin-top: -43px;
+        margin-bottom: 15px;
     }
     
+    .custom-btn>i.fa {
+        margin-right: 12px;
+    margin-left: 9px;
+}
 }
 
 /* الشاشات الصغيرة فقط */
@@ -808,10 +818,22 @@ color: $controller;
         padding-left: 0;
     }
 
-    .video.custom-btn{
-        left: 19%;
+    
+
+    .header .images>img {
+        max-width: 54%;
+    }
+    .video.custom-btn {
+        left: 14%;
+        margin-top: -4px;
         margin-bottom: 10px;
-        margin-top: 0;
+    }
+    video{
+        width: 200px;
+    }
+    .custom-btn>i.fa {
+        margin-right: 8px;
+        margin-left: 20px;
     }
 }
 
@@ -844,4 +866,6 @@ color: $controller;
     .landing-screen img{
         max-width: 100%;
     }
+
+    
 }
