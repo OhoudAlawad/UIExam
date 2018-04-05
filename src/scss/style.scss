@@ -793,10 +793,36 @@ color: $controller;
 }
 
 /* الشاشات الصغيرة فقط */
-@media(max-width: 768px) and (max-width: 991px){
+@media(min-width: 768px) and (max-width: 991px){
+    
+    
+    #custom-left .btn-app {
+        padding: 10px 13px 10px 14px;
+        margin-left: 8px;
+    }
+
+    #custom-right>li>a {
+         margin-left: 0; 
+    }
+    .navbar-default .navbar-nav>li>a{
+        padding-left: 0;
+    }
+
+    .video.custom-btn{
+        left: 19%;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+}
+
+/* الشاشات الصغيرة والصغيرة جدا */
+@media(max-width:991px){
+    
+
     h1{
         font-size: 40px;
     }
+
     .p-header {
         font-size: 16px;
         max-width: 80%;
