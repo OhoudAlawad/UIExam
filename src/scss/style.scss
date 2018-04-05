@@ -803,14 +803,32 @@ color: $controller;
         margin-right: 12px;
     margin-left: 9px;
 }
-.column{
+.feature1 .column{
     margin-top: 80px;
 }
 .paragraph{
     font-size: 16px;
+    text-align: right;
 }
 .custom-heading{
     font-size: 24px;
+}
+.passcode {
+    margin-top: 76px;
+    position: static;
+    left: unset;
+}
+.passcode .btn-app {
+    padding: 18px 15px 16px 13px;
+    margin-left: unset;
+}
+.passcode .btn-app>span {
+    padding-left: unset;
+}
+.m-passcode>img {
+    margin-top: 40px;
+    position: relative;
+    right: 5%;
 }
 }
 
@@ -842,11 +860,15 @@ color: $controller;
         margin-right: 8px;
         margin-left: 20px;
     }
-    .column{
+    .feature1 .column{
         margin-top: 122px;
     }
     .feature1{
         padding-right: 5%;
+    }
+    .m-passcode>img {
+        position: relative;
+        right: 2%;
     }
 }
 
@@ -886,6 +908,18 @@ color: $controller;
     .feature1{
         padding-top: 0;
     }
-    
+    .feature2{
+        padding-right: 0;
+    }
+    .heading2{
+        margin-top: 45px;
+        
+    }
+    .feature2 .heading2, .feature2 .paragraph{
+        text-align: right;
+    }
+    .feature2 .column:first-child{
+        padding-right: 10%;
+    }
     
 }
