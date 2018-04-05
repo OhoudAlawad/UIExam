@@ -163,8 +163,6 @@ h1{
 .feature1{
     
     background-color: $primary-color;
-    padding-left: 225px;
-    padding-right: 225px;
     padding-top: 122px;
     padding-bottom: 1px;
     position: relative;
@@ -805,6 +803,15 @@ color: $controller;
         margin-right: 12px;
     margin-left: 9px;
 }
+.column{
+    margin-top: 80px;
+}
+.paragraph{
+    font-size: 16px;
+}
+.custom-heading{
+    font-size: 24px;
+}
 }
 
 /* الشاشات الصغيرة فقط */
@@ -834,6 +841,12 @@ color: $controller;
     .custom-btn>i.fa {
         margin-right: 8px;
         margin-left: 20px;
+    }
+    .column{
+        margin-top: 122px;
+    }
+    .feature1{
+        padding-right: 5%;
     }
 }
 
@@ -870,5 +883,9 @@ color: $controller;
         max-width: 100%;
     }
 
+    .feature1{
+        padding-top: 0;
+    }
+    
     
 }
