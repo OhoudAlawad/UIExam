@@ -883,7 +883,7 @@ color: $controller;
     }
     hr.hr {
         
-        width: 350px;
+        width: 660px;
         margin-top: 100px;
         margin-bottom: 0;
     }
@@ -933,6 +933,20 @@ color: $controller;
     }
     .plan .custom-heading {
         font-size: 33px;
+    }
+
+    .footer a {
+       
+        font-size: 12px;
+    }
+    .footer .paragraph{
+        max-width: 90%;
+    }
+    .footer h6{
+        font-size: 16px;
+    }
+    .col-left{
+        padding-left: 0;
     }
 }
 
@@ -1102,7 +1116,13 @@ button.btn.Form-submit{
     left: 2px;
     bottom: 180px;
 }
-.subscribe input.invite {
+.subscribe input.invite , hr.hr {
     width: 332px;
 }
+ .social-links{
+     margin-bottom: 50px;
+ }
+ .left-footer{
+     margin-bottom: 50px;
+ }
 }
