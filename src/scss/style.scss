@@ -278,9 +278,9 @@ ul.list-inline.text-right{
     margin-top: 142px;
     max-width: 100%;
 }
-.feature4 .r-margin .col-xs-12{
+/*.feature4 .r-margin .col-xs-12{
     position: relative;
-}
+}*/
 hr.sm-hr{
     border-top: 2px solid $bg-button;
     width: 50px;
@@ -292,36 +292,55 @@ h6.h-small{
     font-family: 'MyriadArabic';
     margin-bottom: 45px;
 }
+.landing-screen .col-sm-4{
+    padding-left: 0;
+    padding-right: 0;
+}
 .landing-screen {
     
    position: relative;
+   /*display: flex;
+   //flex-flow: column wrap;
+   flex-direction: row;
+   justify-content: flex-end;
+   */
    
 }
-img.L-S4{
+img.L-S4 {
     position: relative;
-    left: 6%;
+    right: 1%;
+    margin-top: 16%;
+   // width:284px;
 }
 
+img.L-S3{
+   // width: 438px;
+    position: absolute;
+    top: 11%;
+    right: 37%;
+}
+/*
 img.L-S3 {
     position: relative;
     left: 26%;
 }
-
+*/
 img.L-S {
     position: relative;
-    left: 44%;
+    right: 2%;
 }
 
 img.L-S1 {
-    position: absolute;
-    top: 10%;
-    right: 81.1%;
+    margin-top: 16%;
+    position: relative;
+    //top: 10%;
+    right: 42%;
 }
 
 img.L-S2 {
     position: absolute;
-    top: 10%;
-    left: 13%;
+    top: 11%;
+    left: 42%;
 }
 
 .GitApp{
@@ -773,6 +792,121 @@ color: $controller;
 }
 //end footer section
 
+
+
+/* الشاشات الصغيرة فقط */
+@media(min-width: 768px) and (max-width: 991px){
+    
+    
+    #custom-left .btn-app {
+        padding: 10px 13px 10px 14px;
+        margin-left: 8px;
+    }
+
+    #custom-right>li>a {
+         margin-left: 0; 
+    }
+    .navbar-default .navbar-nav>li>a{
+        padding-left: 0;
+    }
+
+    .video.custom-btn {
+        left: 14%;
+        //margin-top: -4px;
+       // margin-bottom: 10px;
+    }
+    video{
+        width: 200px;
+    }
+    .custom-btn>i.fa {
+        margin-right: 8px;
+        margin-left: 20px;
+    }
+    .feature1 .column{
+        margin-top: 122px;
+    }
+    .feature1{
+        padding-right: 5%;
+    }
+    .m-passcode>img {
+        position: relative;
+        right: 2%;
+    }
+    .feature3 .column{
+        position: relative;
+    right: 19%;
+    }
+    
+}
+
+/* الشاشات الصغيرة والصغيرة جدا */
+@media(max-width:991px){
+    
+    .header,.header .overlay{
+        height: 100vh;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .p-header {
+        font-size: 16px;
+        max-width: 80%;
+        position: relative;
+        left: -8%;
+    }
+    hr.hr {
+        
+        width: 350px;
+        margin-top: 100px;
+        margin-bottom: 0;
+    }
+    .m-passcode>img{
+        max-width: 100%;
+    }
+    .feature3 img{
+        max-width: 100%;
+    }
+    /*.landing-screen img{
+        max-width: 100%;
+    } */
+
+    img.L-S4{
+        max-width: 53%;
+    }
+    img.L-S1{
+    max-width: 58%;
+    }
+    img.L-S3,img.L-S2{
+        max-width: 82%;
+    }
+    img.L-S{
+        max-width: 92%
+    }
+    
+
+    .feature1{
+        padding-top: 0;
+    }
+    .feature2{
+        padding-right: 0;
+    }
+    .heading2{
+        margin-top: 45px;
+        
+    }
+    .feature2 .heading2, .feature2 .paragraph{
+        text-align: right;
+    }
+    .feature2 .column:first-child{
+        padding-right: 10%;
+    }
+    .feature3 .heading2 {
+        margin-top: 70px;
+    }
+}
+
 //الشاشات الصغيرة جداً
 @media(max-width:767px) {
     
@@ -850,102 +984,26 @@ ul.list-inline.text-right {
     margin-left: 0;
     margin-top: 80px;
 }
+img.L-S3 {
+    max-width: 72%;
+    position: absolute;
+    top: 48%;
+    right: 32%;
 }
 
-/* الشاشات الصغيرة فقط */
-@media(min-width: 768px) and (max-width: 991px){
-    
-    
-    #custom-left .btn-app {
-        padding: 10px 13px 10px 14px;
-        margin-left: 8px;
-    }
-
-    #custom-right>li>a {
-         margin-left: 0; 
-    }
-    .navbar-default .navbar-nav>li>a{
-        padding-left: 0;
-    }
-
-    .video.custom-btn {
-        left: 14%;
-        //margin-top: -4px;
-       // margin-bottom: 10px;
-    }
-    video{
-        width: 200px;
-    }
-    .custom-btn>i.fa {
-        margin-right: 8px;
-        margin-left: 20px;
-    }
-    .feature1 .column{
-        margin-top: 122px;
-    }
-    .feature1{
-        padding-right: 5%;
-    }
-    .m-passcode>img {
-        position: relative;
-        right: 2%;
-    }
-    .feature3 .column{
-        position: relative;
-    right: 19%;
-    }
+img.L-S4 {
+    max-width: 47%;
 }
-
-/* الشاشات الصغيرة والصغيرة جدا */
-@media(max-width:991px){
-    
-    .header,.header .overlay{
-        height: 100vh;
-    }
-
-    h1{
-        font-size: 40px;
-    }
-
-    .p-header {
-        font-size: 16px;
-        max-width: 80%;
-        position: relative;
-        left: -8%;
-    }
-    hr.hr {
-        
-        width: 350px;
-        margin-top: 100px;
-        margin-bottom: 0;
-    }
-    .m-passcode>img{
-        max-width: 100%;
-    }
-    .feature3 img{
-        max-width: 100%;
-    }
-    .landing-screen img{
-        max-width: 100%;
-    }
-
-    .feature1{
-        padding-top: 0;
-    }
-    .feature2{
-        padding-right: 0;
-    }
-    .heading2{
-        margin-top: 45px;
-        
-    }
-    .feature2 .heading2, .feature2 .paragraph{
-        text-align: right;
-    }
-    .feature2 .column:first-child{
-        padding-right: 10%;
-    }
-    .feature3 .heading2 {
-        margin-top: 70px;
-    }
+img.L-S2 {
+    max-width: 73%;
+    position: absolute;
+    top: 11%;
+    left: 36%;
+}
+img.L-S1 {
+    max-width: 52%;
+    margin-top: 14%;
+    position: relative;
+    right: 48%;
+}
 }
