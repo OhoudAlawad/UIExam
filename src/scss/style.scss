@@ -797,6 +797,8 @@ color: $controller;
 /* الشاشات الصغيرة فقط */
 @media(min-width: 768px) and (max-width: 991px){
     
+   
+    
     
     #custom-left .btn-app {
         padding: 10px 13px 10px 14px;
@@ -841,6 +843,7 @@ color: $controller;
     left: 466px;
     bottom: 141px;
     }
+
     
 }
 
@@ -909,6 +912,10 @@ color: $controller;
     }
     .feature3 .heading2 {
         margin-top: 70px;
+    }
+    #carousel-customers #carousel-li> li:nth-child(2) {
+        margin-right: 17px;
+        margin-left: 17px;
     }
 }
 
@@ -1025,5 +1032,23 @@ button.btn.Form-submit{
 }
 .Form-submit>span {
     padding-left: 16px;
+}
+#carousel-customers .carousel-indicators li {
+    width: 30px;
+    height: 30px;
+}
+#carousel-customers .carousel-indicators .active {
+    
+    width: 80px;
+    height: 80px;
+}
+#carousel-customers .carousel-control.left {
+    right: -27px;
+}
+#carousel-customers .carousel-control.right {
+   left: -27px;
+}
+.fa-2x {
+    font-size: 1.5em;
 }
 }
