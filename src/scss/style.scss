@@ -671,12 +671,13 @@ i.fa.fa-check{
     width: 212px;
     height: 42px;
 }
-.Pro{
-    background-color: #ebebed;
-    height: 550px;
-    position: relative;
-    left: -35%;
-    margin-top: 23%;
+
+ .Pro {
+        background-color: #ebebed;
+        height: 550px;
+        position: relative;
+        left: 12%;
+        margin-top: 15%;   
     //z-index: -1;
 }
 .Pro .listed{
@@ -843,8 +844,20 @@ color: $controller;
     left: 466px;
     bottom: 141px;
     }
-
+    .plan-price .btn-app {
+       
+        width: 160px;
+    }
+    .plan-price {
+        
+        width: 251px;
+    }
+    .Pro {
+        margin-top: 23%;
+        left: 4%;
+    }
     
+
 }
 
 /* الشاشات الصغيرة والصغيرة جدا */
@@ -876,10 +889,7 @@ color: $controller;
     .feature3 img{
         max-width: 100%;
     }
-    /*.landing-screen img{
-        max-width: 100%;
-    } */
-
+    
     img.L-S4{
         max-width: 53%;
     }
@@ -916,6 +926,9 @@ color: $controller;
     #carousel-customers #carousel-li> li:nth-child(2) {
         margin-right: 17px;
         margin-left: 17px;
+    }
+    .plan .custom-heading {
+        font-size: 33px;
     }
 }
 
@@ -1050,5 +1063,34 @@ button.btn.Form-submit{
 }
 .fa-2x {
     font-size: 1.5em;
+}
+
+.listed{
+    font-size: 12px;
+}
+.starter {
+    left: 45%;
+}
+.plan{
+    padding-top: 20px;
+}
+.plan-price {
+    width: 197px;
+}
+.Pro {
+    
+    left: -46%;
+    margin-top: 15%;
+}
+.plan-price .btn-app {
+    margin-bottom: 97px;
+    width: 117px;
+   
+}
+.p-choose{
+    margin-bottom: 45px;
+}
+.plan-choose{
+    margin-bottom: 100px;
 }
 }
