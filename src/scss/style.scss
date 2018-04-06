@@ -856,6 +856,10 @@ color: $controller;
         margin-top: 23%;
         left: 4%;
     }
+    .subscribe button.btn.Form-submit {
+        left: 114px;
+        bottom: 180px;
+    }
     
 
 }
@@ -1092,5 +1096,13 @@ button.btn.Form-submit{
 }
 .plan-choose{
     margin-bottom: 100px;
+}
+
+.subscribe button.btn.Form-submit {
+    left: 2px;
+    bottom: 180px;
+}
+.subscribe input.invite {
+    width: 332px;
 }
 }
