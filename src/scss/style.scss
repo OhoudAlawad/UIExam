@@ -212,13 +212,13 @@ hr.hr{
 
 .passcode{
     margin-top: 135px;
-    position: relative;
-    left: calc(50% - 394px);
+    //position: relative;
+   // left: calc(50% - 394px);
 }
 .m-passcode>img{
     margin-top: 86px;
     position: relative;
-    left: 28%;
+    left: 64%;
    
 }
 .passcode .btn-app{
@@ -834,7 +834,10 @@ color: $controller;
     }
     .m-passcode>img {
         position: relative;
-        right: 2%;
+        left: 21%;
+    }
+    .feature2 .column{
+        margin-right: 20%;
     }
     .feature3 .column{
         position: relative;
@@ -988,6 +991,10 @@ color: $controller;
     font-size: 16px;
     
 }
+.feature2 .column{
+    margin-right: 14%;
+    padding-left: 20%;
+}
 .feature2 .paragraph{
     text-align: right;
 }
@@ -996,8 +1003,8 @@ color: $controller;
 }
 .passcode {
     margin-top: 76px;
-    position: static;
-    left: unset;
+   // position: static;
+    //left: unset;
 }
 .passcode .btn-app {
     padding: 18px 15px 16px 13px;
@@ -1009,7 +1016,7 @@ color: $controller;
 .m-passcode>img {
     margin-top: 40px;
     position: relative;
-    right: 5%;
+    left: 24%;
 }
 .feature3{
     padding-top: 100px;
