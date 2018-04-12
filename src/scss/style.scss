@@ -19,7 +19,7 @@ body>.container-fluid{
     background: transparent;
     border: none;
     padding-top: 44px;
-   position: relative;
+    position: relative;
   
 }
 #custom-left>li>a{
@@ -48,8 +48,7 @@ body>.container-fluid{
     padding-left: 22px;
 }
 
-.navbar-default .navbar-nav > li > a{
-    
+.navbar-default .navbar-nav > li > a{   
     font-size: 16px;
     color: $second-color;
     transition-property: color;
@@ -94,8 +93,7 @@ body>.container-fluid{
     //z-index: -2;
 }
 
-.brand{
-    
+.brand{    
     position: absolute;
     left:calc(50% - 70px);
     bottom: 28%;
@@ -118,11 +116,8 @@ h1{
     color:$p-color;
     width: 786px;
     position: absolute;
-    left:calc(50% - 393px);
-    
-    
+    left:calc(50% - 393px);   
 }
-
 .custom-btn{
     font-family: 'MyriadArabic';
     font-size: 16px;
@@ -133,9 +128,6 @@ h1{
     transition-property: border-color,background-color;
     transition-duration: 0.3s;
 }
-    
-
-
 .video.custom-btn{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -234,7 +226,7 @@ hr.hr{
     
 }
 .passcode .custom-btn:hover,.passcode .custom-btn:focus, .passcode .custom-btn:active, .passcode .custom-btn:focus:active{
-color: $primary-color;
+    color: $primary-color;
     background-color: $bg-button;
     border: 1px solid  $bg-button;
     transition-property: color,background-color;
@@ -296,15 +288,16 @@ h6.h-small{
     padding-left: 0;
     padding-right: 0;
 }
-.landing-screen {
-    
+.landing-screen img {
+    max-width: 100%;
+}
+.landing-screen {   
    position: relative;
    /*display: flex;
    //flex-flow: column wrap;
    flex-direction: row;
    justify-content: flex-end;
-   */
-   
+   */ 
 }
 img.L-S4 {
     position: relative;
@@ -358,9 +351,7 @@ img.L-S2 {
 .GitApp  h6.h-small:last-of-type {
     color: rgba($h-color,0.30);
 }
-input.invite {
-    font-family: 'MyriadArabic';
-    font-size: 16px;
+.invite-input{
     background-color: rgba($third-color,0.20);
     border-radius: 25px;
     border: 1px solid $brder-color;
@@ -368,6 +359,31 @@ input.invite {
     height: 50px;
     line-height: 50px;
     margin-bottom: 69px;
+    display: inline-block;
+    padding-top: 3px;
+
+}
+input.invite {
+    font-family: 'MyriadArabic';
+    font-size: 16px;
+    background-color: transparent;
+    width: 330px;
+    height: 50px;
+    border: none;
+    display: inline-block;
+    padding-right: 7px;
+    position: relative;
+    bottom: 13%;
+    /*background-color: rgba($third-color,0.20);
+    border-radius: 25px;
+    border: 1px solid $brder-color;
+    width: 502px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 69px; */
+}
+input.invite:focus{
+    outline: none;
 }
 button.btn.Form-submit {
     font-family: 'MyriadArabic';
@@ -379,9 +395,11 @@ button.btn.Form-submit {
     height: 42px;
     padding-right: 31px;
     padding-left: 24px;
-    position: absolute;
-    left: 552px;
-    bottom: 140px;
+    float: left;
+    margin-left: 1px;
+    //position: absolute;
+    //left: 552px;
+   // bottom: 140px;
 }
 
 .Form-submit >span{
@@ -389,7 +407,7 @@ button.btn.Form-submit {
 }
 label#email-error {
     position: absolute;
-    bottom: 30%;
+    bottom: 27%;
     left: 45%;
     color: $g-color;
 }
@@ -423,13 +441,11 @@ label#email-error {
     text-align: right;
 }
 .btn-app2 .d-f{
-    font-size:12px;
-    
+    font-size:12px;  
 }
 
-i.fa.fa-apple.fa-2x {
-    
-    position: relative;
+i.fa.fa-apple.fa-2x {   
+   position: relative;
    bottom: 4px;
 }
 //customer section
@@ -439,9 +455,7 @@ i.fa.fa-apple.fa-2x {
 }
 #carousel-customers {
     padding-top: 132px;
-    padding-bottom: 128px ;
-   
-    
+    padding-bottom: 128px ;   
 }
 #carousel-customers .carousel-control {
     background: none;
@@ -519,37 +533,42 @@ i.fa.fa-apple.fa-2x {
     border: 1px solid $border2;
     border-radius: 25px;
     background-color: rgba($color:#3b55e6, $alpha: 0.015);
-     margin-top: 22px;
-     margin-bottom: 77px; 
+    margin-top: 22px;
+    margin-bottom: 77px; 
     }
-.switch2 > span, .switch-toggle > span 
-{  color: #000000; 
+.switch2 > span, .switch-toggle > span {  
+    color: #000000; 
 }
-.switch2 span span, .switch2 label, .switch-toggle span span, .switch-toggle label 
-{  color: #2b2b2b; 
+.switch2 span span, .switch2 label, .switch-toggle span span, .switch-toggle label {  
+    color: #2b2b2b; 
 }
 
 .switch-toggle a, 
-.switch2 span span 
-{ display: none; }
+.switch2 span span { 
+    display: none; 
+}
 
-.switch2 
-{ display: block; 
+.switch2 { 
+    display: block; 
     height: 42px; 
     position: relative; 
     overflow: visible; 
     padding: 0px; 
-    margin-left:0px; }
-.switch2 * 
-{ box-sizing: border-box; }
+    margin-left:0px; 
+}
+.switch2 * {
+    box-sizing: border-box; 
+}
 .switch2 a { 
     display: block; 
-    transition: all 0.3s ease-out 0s; }
+    transition: all 0.3s ease-out 0s; 
+}
 
 .switch2 label, 
-.switch2 > span 
-{ line-height: 30px; 
-    vertical-align: middle;}
+.switch2 > span { 
+    line-height: 30px; 
+    vertical-align: middle;
+}
 
 .switch2 label {
     font-weight: 700; 
@@ -673,11 +692,11 @@ i.fa.fa-check{
 }
 
  .Pro {
-        background-color: #ebebed;
-        height: 550px;
-        position: relative;
-        left: 12%;
-        margin-top: 15%;   
+    background-color: #ebebed;
+    height: 550px;
+    position: relative;
+    left: 12%;
+    margin-top: 15%;   
     //z-index: -1;
 }
 .Pro .listed{
@@ -706,17 +725,17 @@ i.fa.fa-check{
 // start subscribe section
 .subscribe{
     background-color: $primary-color;
-position: relative;
+    position: relative;
 }
 
-.subscribe button.btn.Form-submit{
+/*.subscribe button.btn.Form-submit{
     left: 324px;
     bottom: 179px;
-}
+}*/
 .subscribe input.invite{
-padding-right: 17px;
-border-color: $border3;
-color: $controller;
+   // padding-right: 17px;
+   // border-color: $border3;
+    color: $controller;
 }
 
 .subscribe .p-choose{
@@ -724,7 +743,7 @@ color: $controller;
 }
 .subscribe label#email-error {
     position: absolute;
-    top: 52%;
+    top: 47%
 }
 .subscribe hr.hr,.footer hr.hr{
     margin: 0;
@@ -796,11 +815,7 @@ color: $controller;
 
 
 /* الشاشات الصغيرة فقط */
-@media(min-width: 768px) and (max-width: 991px){
-    
-   
-    
-    
+@media(min-width: 768px) and (max-width: 991px){    
     #custom-right .btn-app { //left
         padding: 10px 13px 10px 14px;
         margin-left: 30px;
@@ -817,7 +832,7 @@ color: $controller;
     .video.custom-btn {
         left: 14%;
         //margin-top: -4px;
-       // margin-bottom: 10px;
+        // margin-bottom: 10px;
     }
     video{
         width: 200px;
@@ -842,12 +857,12 @@ color: $controller;
     /*
     .feature3 .column{
         position: relative;
-    right: 19%;
+        right: 19%;
     } */
     button.btn.Form-submit{
         position: absolute;
         left: 18%;
-    bottom: 141px;
+         bottom: 141px;
     }
     .plan-price .btn-app {
        
@@ -870,8 +885,7 @@ color: $controller;
 }
 
 /* الشاشات الصغيرة والصغيرة جدا */
-@media(max-width:991px){
-    
+@media(max-width:991px){   
     .header,.header .overlay{
         height: 100vh;
     }
@@ -901,7 +915,7 @@ color: $controller;
         max-width: 53%;
     }
     img.L-S1{
-    max-width: 58%;
+        max-width: 58%;
     }
     img.L-S3,img.L-S2{
         max-width: 82%;
@@ -941,7 +955,7 @@ color: $controller;
         
     }
     .feature3 ul li{
-    padding-left: 0;
+        padding-left: 0;
         padding-right: 0;
     }
     #carousel-customers #carousel-li> li:nth-child(2) {
@@ -968,14 +982,10 @@ color: $controller;
 }
 
 //الشاشات الصغيرة جداً
-@media(max-width:767px) {
-    
-    
+@media(max-width:767px) {    
     .brand{
         bottom: 68%;
     }
-    
-
     .header .images>img {
         max-width: 81%;
     }
@@ -985,7 +995,7 @@ color: $controller;
         left: 23%;
         padding-right: 30px;
         padding-top: 15px;
-    padding-bottom: 15px;
+        padding-bottom: 15px;
         margin-top: -43px;
         margin-bottom: 15px;
     }
@@ -995,155 +1005,160 @@ color: $controller;
     
     .custom-btn>i.fa {
         margin-right: 12px;
-    margin-left: 9px;
+        margin-left: 9px;
 }
-.feature1 .column{
-    margin-top: 80px;
-}
-.paragraph{
-    font-size: 16px;
-    
-}
-.feature2 .column{
-    margin-right: 10%;
-    padding-left: 15%;
-}
-.feature2 .paragraph{
-    text-align: right;
-}
-.custom-heading{
-    font-size: 24px;
-}
-.passcode {
-    margin-top: 76px;
-   // position: static;
-    //left: unset;
-}
-.passcode .btn-app {
-    padding: 18px 15px 16px 13px;
-    margin-left: unset;
-}
-.passcode .btn-app>span {
-    padding-left: unset;
-}
-.m-passcode>img {
-    margin-top: 40px;
-    position: relative;
-    left: 24%;
-}
-.feature3{
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-.feature3 .column {
-    padding-right: 55px;
-    padding-left: 10%;
-    
-}
+    .feature1 .column{
+        margin-top: 80px;
+    }
+    .paragraph{
+        font-size: 16px;
+        
+    }
+    .feature2 .column{
+        margin-right: 10%;
+        padding-left: 15%;
+    }
+    .feature2 .paragraph{
+        text-align: right;
+    }
+    .custom-heading{
+        font-size: 24px;
+    }
+    .passcode {
+        margin-top: 76px;
+    // position: static;
+        //left: unset;
+    }
+    .passcode .btn-app {
+        padding: 18px 15px 16px 13px;
+        margin-left: unset;
+    }
+    .passcode .btn-app>span {
+        padding-left: unset;
+    }
+    .m-passcode>img {
+        margin-top: 40px;
+        position: relative;
+        left: 24%;
+    }
+    .feature3{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .feature3 .column {
+        padding-right: 55px;
+        padding-left: 10%;
+        
+    }
 
-ul.list-inline.text-right {
-    margin-left: 0;
-}
-.feature3 .p-small {
-    margin-left: 0;
-    margin-top: 80px;
-}
-img.L-S3 {
-    max-width: 72%;
-    position: absolute;
-    top: 48%;
-    right: 32%;
-}
+    ul.list-inline.text-right {
+        margin-left: 0;
+    }
+    .feature3 .p-small {
+        margin-left: 0;
+        margin-top: 80px;
+    }
+    img.L-S3 {
+        max-width: 72%;
+        position: absolute;
+        top: 48%;
+        right: 32%;
+    }
 
-img.L-S4 {
-    max-width: 47%;
-}
-img.L-S2 {
-    max-width: 73%;
-    position: absolute;
-    top: 11%;
-    left: 36%;
-}
-img.L-S1 {
-    max-width: 52%;
-    margin-top: 14%;
-    position: relative;
-    right: 48%;
-}
-.GitApp .custom-heading {
-    font-size: 28px;
-}
-input.invite{
-    width: 345px;
-}
-button.btn.Form-submit{
-    left: 5%;
-    bottom: 141px;
-    width: 126px;
-    padding-right: 20px;
-}
-.Form-submit>span {
-    padding-left: 16px;
-}
-#carousel-customers .carousel-indicators li {
-    width: 30px;
-    height: 30px;
-}
-#carousel-customers .carousel-indicators .active {
+    img.L-S4 {
+        max-width: 47%;
+    }
+    img.L-S2 {
+        max-width: 73%;
+        position: absolute;
+        top: 11%;
+        left: 36%;
+    }
+    img.L-S1 {
+        max-width: 52%;
+        margin-top: 14%;
+        position: relative;
+        right: 48%;
+    }
+    .GitApp .custom-heading {
+        font-size: 28px;
+    }
+    .invite-input{
+        width: 318px;
+    }
+    input.invite{
+        width: 186px;
+    }
+    button.btn.Form-submit{
+        left: 5%;
+        bottom: 141px;
+        width: 126px;
+        padding-right: 20px;
+    }
+    .Form-submit>span {
+        padding-left: 16px;
+    }
+    #carousel-customers .carousel-indicators li {
+        width: 30px;
+        height: 30px;
+    }
+    #carousel-customers .carousel-indicators .active {
+        
+        width: 80px;
+        height: 80px;
+    }
+    #carousel-customers .carousel-control.left {
+        right: -27px;
+    }
+    #carousel-customers .carousel-control.right {
+        left: -27px;
+    }
+    .fa-2x {
+        font-size: 1.5em;
+    }
+
+    .listed{
+        font-size: 12px;
+    }
+    .starter {
+        left: 45%;
+    }
+    .plan{
+        padding-top: 20px;
+    }
+    .plan-price {
+        width: 197px;
+    }
+    .Pro {
+        
+        left: -46%;
+        margin-top: 15%;
+    }
+    .plan-price .btn-app {
+        margin-bottom: 97px;
+        width: 117px;
     
-    width: 80px;
-    height: 80px;
-}
-#carousel-customers .carousel-control.left {
-    right: -27px;
-}
-#carousel-customers .carousel-control.right {
-   left: -27px;
-}
-.fa-2x {
-    font-size: 1.5em;
-}
-
-.listed{
-    font-size: 12px;
-}
-.starter {
-    left: 45%;
-}
-.plan{
-    padding-top: 20px;
-}
-.plan-price {
-    width: 197px;
-}
-.Pro {
-    
-    left: -46%;
-    margin-top: 15%;
-}
-.plan-price .btn-app {
-    margin-bottom: 97px;
-    width: 117px;
-   
-}
-.p-choose{
-    margin-bottom: 45px;
-}
-.plan-choose{
-    margin-bottom: 100px;
-}
-
-.subscribe button.btn.Form-submit {
-    left: 2px;
-    bottom: 180px;
-}
-.subscribe input.invite , hr.hr {
-    width: 332px;
-}
- .social-links{
-     margin-bottom: 50px;
- }
- .left-footer{
-     margin-bottom: 50px;
- }
+    }
+    .p-choose{
+        margin-bottom: 45px;
+    }
+    .plan-choose{
+        margin-bottom: 100px;
+    }
+    label#email-error{
+        left: 26%;
+    }
+    /*.subscribe button.btn.Form-submit {
+        left: 2px;
+        bottom: 180px;
+    }*/
+     hr.hr {
+        width: 332px;
+    }
+    .social-links{
+        margin-bottom: 50px;
+    }
+    .left-footer{
+        margin-bottom: 50px;
+    }
 }
