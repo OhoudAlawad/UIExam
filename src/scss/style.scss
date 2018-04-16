@@ -217,8 +217,8 @@ hr.hr{
     margin-top: 86px;
     position: relative;
     left: 28%;
-    width: 905px;
-    height: 772px;
+   // width: 905px;
+   // height: 772px;
 }
 .passcode .btn-app{
     padding: 18px 26px 16px 19px;
@@ -870,9 +870,17 @@ i.fa.fa-check{
     .m-passcode>img {
         position: relative;
         left: 21%;
+        left: 13%;
+        max-width: 90%;
+    }
+    .passcode {
+        margin-top: 67px;
     }
     .feature2 .column{
         margin-right: 20%;
+    }
+    .feature3{
+        padding-top: 120px;
     }
     /*
     .feature3 .column{
@@ -936,9 +944,9 @@ i.fa.fa-check{
         margin-top: 100px;
         margin-bottom: 0;
     }
-    .m-passcode>img{
+    /*.m-passcode>img{
         max-width: 100%;
-    }
+    }*/
     
     
     img.L-S4{
@@ -1073,8 +1081,8 @@ i.fa.fa-check{
         margin-top: 40px;
         position: relative;
         left: 24%;
-        width: unset;
-        height: unset;
+      //  width: unset;
+       // height: unset;
     }
     .heading2 {
         margin-top: 12px;
@@ -1201,8 +1209,30 @@ i.fa.fa-check{
         margin-bottom: 50px;
     }
 }
-
-@media only screen and (min-width:793px) and (max-width:1151px){
+/* توجد مشكلة عندما أضع هذه الأبعاد لايتم تطبيقها على 
+793px
+ يجب أن أضع 
+ 793px
+ في أقل عرض حتى تتم تطبيقها 
+@media only screen and (min-width:615px) and (max-width:793px){
+    .m-passcode>img {
+        margin-top: 49px;
+        position: relative;
+        left: 10%;
+       // width: unset; 
+       // height: unset;
+       // max-width: 60%;
+    }
+    .feature3 .WorldMap {
+        position: relative;
+        right: 44%;
+        max-width: 69%;
+    }
+    
+}
+حيث أنني وضعتها بالأبعاد الموضحة في الأسفل ولكن في هذه الحالة يوجد تعارض ولم يتم تطبيق التجاوبية في هذه الحالة بشكل ممتاز
+*/
+@media (min-width:793px) and (max-width:1151px){
     .container {
         width: 910px;
     }
@@ -1271,7 +1301,38 @@ i.fa.fa-check{
     .h1-customer {
         font-size: 30px;
     }
+    
+}
 
+
+@media only screen and (min-width:794px){
+    .m-passcode>img  {
+        margin-top: 50px;
+        position: relative;
+        left: 30%;
+        max-width: 141%;
+        // width: unset;
+        // height: unset;
+        //max-width: 130%;
+    }
+    #custom-right .btn-app{
+        padding: 10px 13px 10px 14px;
+        }
+
+    .feature2 .column {
+        padding-right: 49px;
+        padding-left: 125px;
+    }
+
+    .custom-heading {
+        margin-top: 122px;
+    }
+    .passcode .btn-app>span {
+        padding-left: 10px;
+    }
+    .passcode .custom-btn {
+        padding: 18px 22px 16px 22px;
+    }
     img.L-S4 {
         position: relative;
         right: 1%;
@@ -1302,54 +1363,9 @@ i.fa.fa-check{
         width: 60%;
     }
     
-}
-
-@media only screen and (min-width:794px){
-    .m-passcode>img  {
-    margin-top: unset;
-    position: relative;
-    left: 29%;
-    width: unset;
-    height: unset;
-    max-width: 130%;
-}
-    #custom-right .btn-app{
-        padding: 10px 13px 10px 14px;
-        }
-
-    .feature2 .column {
-        padding-right: unset;
-        padding-left: 180px; 
-    }
-
-    .custom-heading {
-        margin-top: 74px;
-    }
-    .passcode .btn-app>span {
-        padding-left: 10px;
-    }
-    .passcode .custom-btn {
-        padding: 18px 22px 16px 22px;
-    }
-    
-    
 } 
-@media only screen and (min-width:615px) and (max-width:793px){
-    .m-passcode>img {
-        margin-top: 49px;
-        position: relative;
-        left: 10%;
-        width: unset; 
-        height: unset;
-        max-width: 60%;
-    }
-    .feature3 .WorldMap {
-        position: relative;
-        right: 44%;
-        max-width: 69%;
-    }
-    
-}
+
+
 /*
 @media only screen and (min-width:921px){
     .m-passcode>img {
@@ -1375,9 +1391,10 @@ i.fa.fa-check{
         margin-top: 86px;
         width: unset;
         height: unset;
-        max-width: unset;
+     // max-width: unset;
         position: relative;
-        left: 28%;
+        left: 21%;
+        max-width: 124%;
        
     }
     .custom-heading {
@@ -1388,6 +1405,7 @@ i.fa.fa-check{
     }
     .feature2 .column {
         padding-left: 218px;
+        padding-right:unset;
     }
     .passcode .btn-app>span {
         padding-left: 77px;
