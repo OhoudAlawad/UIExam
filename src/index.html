@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>صفحة هبوط لتطبيق هاتف</title>
     <meta name="description" content=" صفحة هبوط لتطبيق هاتف عبارة عن تحديد المهام">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
     <link rel="stylesheet" href="./css/font-awesome.css">
     <link rel="stylesheet" href="./css/bootstrap.css"> 
     <link rel="stylesheet" href="./css/animate.css"> 
@@ -147,12 +147,12 @@
             <div class="row r-margin">
                 <!--العمود الأول-->
                 <div class="col-xs-12 col-md-6 ">
-                    <div class=" wow fadeInDown m-passcode">
+                    <div class=" wow fadeInDown m-passcode" id="Pass">
                         <img src="images/iPhonee6.png" alt="passcode">
                     </div>
                 </div>
                 <!--العمود الثاني-->
-                <div class="col-xs-12 col-md-6 column">
+                <div class="col-xs-12 col-md-6 column ">
                     <h2 class="custom-heading heading2 ">
                         يومك
                     </br>
@@ -292,9 +292,9 @@
                             إحصل عليه في هاتفك الذكي                       
                     </h2>
                     <form action="." method="post" name="myForm" id="InviteForm" class="text-center">                       
-                        <div class=" invite-input ">                       
-                            <input type="email" name="email" class=" invite"   required>                                                      
-                            <button class="btn Form-submit " type="submit" name="submit">
+                        <div class=" invite-input clearfix">                       
+                            <input type="email" name="email" class=" invite pull-left"   required>                                                      
+                            <button class="btn Form-submit pull-right" type="submit" name="submit">
                                 <span>
                                 أرسل دعوة
                                 </span>

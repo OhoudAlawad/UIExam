@@ -192,8 +192,14 @@ hr.hr{
 }
 .feature2{
     background-color: $primary-color;
-    padding-right: 215px;
+    padding-left: 18px;
     position: relative;
+}
+.feature2 .column{
+    padding-left:218px; 
+}
+.feature2 .column .paragraph, .feature3 .column .paragraph{
+    max-width: unset;
 }
 .heading2{
     font-size: 42px;
@@ -210,8 +216,9 @@ hr.hr{
 .m-passcode>img{
     margin-top: 86px;
     position: relative;
-    left: 64%;
-   
+    left: 28%;
+    width: 905px;
+    height: 772px;
 }
 .passcode .btn-app{
     padding: 18px 26px 16px 19px;
@@ -239,13 +246,13 @@ hr.hr{
 }
 
 
-/*.feature3 .WorldMap{
+.feature3 .WorldMap{
     position: relative;
-    left: 9%;
-} */
+    right: 2%;
+} 
 
-.feature3  .column{
-    padding-right: 75px;
+.feature3 .column{
+    padding-right: 218px;
 }
 
 .feature3 .heading2{
@@ -333,7 +340,7 @@ img.L-S1 {
 img.L-S2 {
     position: absolute;
     top: 11%;
-    left: 42%;
+    left: 40%;
 }
 
 .GitApp{
@@ -765,7 +772,7 @@ i.fa.fa-check{
     font-size: 14px;
     margin-top: 35px;
     margin-bottom: 60px;
-    max-width: 100%;
+    max-width: 70%;
 }
 .social-links{
     margin-top: 40px;
@@ -814,8 +821,21 @@ i.fa.fa-check{
 
 
 
+
+/*
+@media only screen and (min-width: 992px) {
+    img.L-S2 {  
+        position: absolute;  
+        left: 37%;
+    }
+    img.L-S1 {
+        margin-top: 17%;
+        right: 41%;
+    }
+}*/
+
 /* الشاشات الصغيرة فقط */
-@media(min-width: 768px) and (max-width: 991px){    
+@media (min-width: 768px) and (max-width: 992px){    
     #custom-right .btn-app { //left
         padding: 10px 13px 10px 14px;
         margin-left: 30px;
@@ -859,11 +879,19 @@ i.fa.fa-check{
         position: relative;
         right: 19%;
     } */
-    button.btn.Form-submit{
+    .feature3 .column {
+        padding-right: 120px
+    }
+
+    .feature2 .column .paragraph, .feature3 .column .paragraph{
+        max-width: 489px;
+    }
+
+    /*button.btn.Form-submit{
         position: absolute;
         left: 18%;
          bottom: 141px;
-    }
+    }*/
     .plan-price .btn-app {
        
         width: 160px;
@@ -880,12 +908,14 @@ i.fa.fa-check{
         left: 114px;
         bottom: 180px;
     }
-    
+    img.L-S2 {
+        left: 41%;
+    }
 
 }
 
 /* الشاشات الصغيرة والصغيرة جدا */
-@media(max-width:991px){   
+@media(max-width:992px){   
     .header,.header .overlay{
         height: 100vh;
     }
@@ -946,7 +976,7 @@ i.fa.fa-check{
     }
     .feature3 .WorldMap {
         position: relative;
-        right: 15%;
+        right: 20%;
         margin-top: 10%;
         max-width: 100%;
     }
@@ -1033,6 +1063,9 @@ i.fa.fa-check{
         padding: 18px 15px 16px 13px;
         margin-left: unset;
     }
+    .passcode .custom-btn {
+        padding: 18px 30px 16px 30px;
+    }
     .passcode .btn-app>span {
         padding-left: unset;
     }
@@ -1040,6 +1073,12 @@ i.fa.fa-check{
         margin-top: 40px;
         position: relative;
         left: 24%;
+        width: unset;
+        height: unset;
+    }
+    .heading2 {
+        margin-top: 12px;
+        margin-bottom: 26px;
     }
     .feature3{
         padding-top: 100px;
@@ -1050,7 +1089,7 @@ i.fa.fa-check{
         padding-left: 10%;
         
     }
-
+    
     ul.list-inline.text-right {
         margin-left: 0;
     }
@@ -1160,5 +1199,257 @@ i.fa.fa-check{
     }
     .left-footer{
         margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width:793px) and (max-width:1151px){
+    .container {
+        width: 910px;
+    }
+    #custom-left>li>a {
+        margin-left: unset;
+    }
+    .navbar-collapse{
+        padding-right: unset;
+    }
+    #custom-right .btn-app {
+        padding: 10px 18px 18px 10px;
+        margin-right: 10px;
+    }
+    .btn-app>span {
+        padding-left: 10px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .p-header{
+        font-size: 18px;
+    }
+    .video.custom-btn {
+        margin-top: 121px;
+        margin-bottom: 18px;
+        position: relative;
+        left: 15%;
+    }
+    
+    .feature2 .column {
+        padding-right: 154px;
+    }
+    .custom-heading {
+        margin-top: 10px;
+        margin-bottom: 33px;
+    }
+    .heading2 {
+        font-size: 37px;
+    }
+    .paragraph{
+        font-size: 16px;
+    }
+    .column>p.paragraph:first-of-type {
+        margin-bottom: 33px;
+    }
+    .passcode {
+        margin-top: 67px;
+    }
+    .feature3{
+        padding-top: 170px;
+    }
+    .feature3 .column {
+        padding-right: 139px;
+    }
+    .feature2 .column .paragraph, .feature3 .column .paragraph{
+        max-width: 489px;
+    }
+    .p-small{
+        margin-top: 73px;
+    }
+    
+    #carousel-customers .carousel-indicators li:nth-child(2) {
+        margin-right: 55px;
+        margin-left: 55px;
+    }
+    .h1-customer {
+        font-size: 30px;
+    }
+
+    img.L-S4 {
+        position: relative;
+        right: 1%;
+        margin-top: 16%;
+        width: 55%;
+    }
+    img.L-S3 {
+        position: absolute;
+        top: 11%;
+        right: 37%;
+        width: 85%;
+    }
+    img.L-S {
+        position: relative;
+        right: 2%;
+        width: 94%;
+    }
+    img.L-S2 {
+        position: absolute;
+        top: 12%;
+        left: 40%;
+        width: 84%;
+    }
+    img.L-S1 {
+        margin-top: 18%;
+        position: relative;
+        right: 41%;
+        width: 60%;
+    }
+    
+}
+
+@media only screen and (min-width:794px){
+    .m-passcode>img  {
+    margin-top: unset;
+    position: relative;
+    left: 29%;
+    width: unset;
+    height: unset;
+    max-width: 130%;
+}
+    #custom-right .btn-app{
+        padding: 10px 13px 10px 14px;
+        }
+
+    .feature2 .column {
+        padding-right: unset;
+        padding-left: 180px; 
+    }
+
+    .custom-heading {
+        margin-top: 74px;
+    }
+    .passcode .btn-app>span {
+        padding-left: 10px;
+    }
+    .passcode .custom-btn {
+        padding: 18px 22px 16px 22px;
+    }
+    
+    
+} 
+@media only screen and (min-width:615px) and (max-width:793px){
+    .m-passcode>img {
+        margin-top: 49px;
+        position: relative;
+        left: 10%;
+        width: unset; 
+        height: unset;
+        max-width: 60%;
+    }
+    .feature3 .WorldMap {
+        position: relative;
+        right: 44%;
+        max-width: 69%;
+    }
+    
+}
+/*
+@media only screen and (min-width:921px){
+    .m-passcode>img {
+        margin-top: 49px;
+        position: relative;
+        left: 10%;
+        width: unset; 
+        height: unset;
+        max-width: 60%;
+    }
+    .m-passcode>img {
+        margin-top: 122px;
+        position: relative;
+        left: 34%;
+         width: unset; 
+        height: unset; 
+        max-width: 140%;
+    }
+}*/
+
+@media only screen and (min-width:1440px){
+    .m-passcode>img {
+        margin-top: 86px;
+        width: unset;
+        height: unset;
+        max-width: unset;
+        position: relative;
+        left: 28%;
+       
+    }
+    .custom-heading {
+        margin-top: 205px;
+    }
+    #custom-right .btn-app {
+        padding: 18px 33px 18px 18px;
+    }
+    .feature2 .column {
+        padding-left: 218px;
+    }
+    .passcode .btn-app>span {
+        padding-left: 77px;
+    }
+    .passcode .custom-btn {
+        padding: 18px 44px 16px 44px;
+    }
+    
+
+    img.L-S4 {
+        position: relative;
+        right: 1%;
+        margin-top: 16%;
+        width: 55%;
+    }
+    img.L-S3 {
+        position: absolute;
+        top: 11%;
+        right: 37%;
+        width: 85%;
+    }
+    img.L-S {
+        position: relative;
+        right: 2%;
+        width: 93%;
+    }
+    img.L-S2 {
+        position: absolute;
+        top: 11%;
+        left: 40%;
+        width: 85%;
+    }
+    img.L-S1 {
+        margin-top: 16%;
+        position: relative;
+        right: 40%;
+        width: 60.4%;
+    }
+    .landing-screen img {
+        max-width: unset;
+    }
+}
+
+@media (max-width:360px){
+    .custom-navbar {
+        margin-bottom: unset;
+    }
+    #carousel-customers #carousel-li>li:nth-child(2) {
+        margin-right: 14px;
+        margin-left: 14px;
+    }
+    .invite-input {
+        width: 291px;
+    }
+    input.invite {
+        width: 155px;
+    }
+    h1 {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+    .p-header {
+        font-size: 14px;
     }
 }
