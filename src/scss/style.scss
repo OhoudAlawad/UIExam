@@ -1,76 +1,84 @@
+@import "_variables";
 
-@import '_variables';
-
-@font-face{
-   font-family: 'Myria-Pro', 'MyriadArabic';
-   src: url('../fonts/MyriadProRegular.ttf'),('../fonts/MyriadArabic-Regular.otf');
+@font-face {
+    font-family: 'DINMedium';
+    src: url("../fonts/DINMedium.otf");
 }
 
-body{
-    font-family: 'Myria-Pro', 'MyriadArabic',Georgia, 'Times New Roman', Times, serif;
+body {
+    font-family: 'DINMedium',Georgia, 'Times New Roman', Times, serif;
 }
-body>.container-fluid{
+
+body > .container-fluid {
     padding-left: 0;
     padding-right: 0;
     overflow: hidden;
 }
+
 .custom-navbar {
     margin-bottom: 80px;
     background: transparent;
     border: none;
     padding-top: 44px;
     position: relative;
-  
 }
-#custom-left>li>a{
+
+#custom-left > li > a {
     margin-left: 47px;
 }
-.btn-app{
-    font-family: 'MyriadArabic';
+
+.btn-app {
+    font-family: 'DINMedium';
     font-size: 16px;
     color: $primary-color;
     background-color: $bg-button;
-    border: 1px solid  $bg-button;
+    border: 1px solid $bg-button;
     border-radius: 50px;
+
     //cursor: pointer;
     transition-property: color,background-color;
     transition-duration: 0.3s;
 }
-#custom-right .btn-app{ //left
+
+#custom-right .btn-app { //left
     padding: 18px 33px 18px 18px;
     margin-right: 50px;
 }
-#custom-right > ul{ //left
+
+#custom-right > ul { //left
     margin-left: auto;
     margin-right: auto;
 }
-.btn-app > span{
+
+.btn-app > span {
     padding-left: 22px;
 }
 
-.navbar-default .navbar-nav > li > a{   
+.navbar-default .navbar-nav > li > a {
     font-size: 16px;
     color: $second-color;
     transition-property: color;
     transition-duration: 0.3s;
-    
 }
 
-.navbar-default .navbar-header >a{
+.navbar-default .navbar-header > a {
     color: $second-color;
 }
-.navbar-default .navbar-header >a:not(:last-child){
+
+.navbar-default .navbar-header > a:not(:last-child) {
     left: 45%;
     margin-top: 11%;
 }
-.navbar-default .navbar-header >button{
+
+.navbar-default .navbar-header > button {
     margin-top: 11%;
 }
-.navbar-default .navbar-nav > li > a:hover,.navbar-default .navbar-nav > li > a:active,.navbar-default .navbar-nav > li > a:focus,.navbar-default .navbar-nav > li > a:focus:active{
-    color: lighten($second-color,50%);
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:focus:active {
+    color: lighten($second-color, 50%);
 }
 
-.btn-app:hover, .btn-app:focus, .btn-app:active, .btn-app:focus:active{
+.btn-app:hover, .btn-app:focus, .btn-app:active, .btn-app:focus:active {
     color: $primary-color;
     background-color: $bg-button-dark;
 }
@@ -81,285 +89,319 @@ body>.container-fluid{
     background-size: cover;
     height: 1000px;
     min-width: 100%;
+
     //position: relative;
     //z-index: -3;
-    
 }
 
 .header .overlay {
-    background: rgba(244,244,245,0.40);
+    background: rgba(244, 244, 245, 0.4);
     height: 1000px;
+
     //position: relative;
     //z-index: -2;
 }
 
-.brand{    
+.brand {
     position: absolute;
-    left:calc(50% - 70px);
+    left: calc(50% - 70px);
     bottom: 28%;
     display: block;
-    
 }
-#help{
-    color: rgba(27,28,30,0.4);
+
+#help {
+    color: rgba(27, 28, 30, 0.4);
 }
-h1{
-    font-family: 'Myria-Pro';
+
+h1 {
+    font-family: 'DINMedium';
     font-size: 62px;
     color: $second-color;
     margin-bottom: 34px;
 }
-.p-header{
-    font-family: 'MyriadArabic';
+
+.p-header {
+    font-family: 'DINMedium';
     font-size: 20px;
     line-height: 1.75;
-    color:$p-color;
+    color: $p-color;
     width: 786px;
     position: absolute;
-    left:calc(50% - 393px);   
+    left: calc(50% - 393px);
 }
-.custom-btn{
-    font-family: 'MyriadArabic';
+
+.custom-btn {
+    font-family: 'DINMedium';
     font-size: 16px;
     color: $second-color;
-    background-color: rgba($primary-color,0.20);
+    background-color: rgba($primary-color, 0.2);
     border-radius: 50px;
-    border-color: rgba(38,39,45,0.10);
+    border-color: rgba(38, 39, 45, 0.1);
     transition-property: border-color,background-color;
     transition-duration: 0.3s;
 }
-.video.custom-btn{
+
+.video.custom-btn {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 77px;
     margin-top: 120px;
     margin-bottom: 55px;
     position: relative;
-    left: 10%;
-}
-.video.custom-btn:hover{
-    background-color: rgba($primary-color,0.30);
-    border-color: rgba(38,39,45,0.20);
+    left: 12%;
 }
 
-.custom-btn>i.fa{
+.video.custom-btn:hover {
+    background-color: rgba($primary-color, 0.3);
+    border-color: rgba(38, 39, 45, 0.2);
+}
+
+.custom-btn > i.fa {
     margin-right: 15px;
     margin-left: 50px;
 }
-.header .images>img{
+
+.header .images > img {
     position: relative;
     z-index: 0;
     max-width: 100%;
 }
 
-.feature1{
-    
+.feature1 {
     background-color: $primary-color;
     padding-top: 122px;
     padding-bottom: 1px;
     position: relative;
     z-index: 1;
-    
 }
-hr.hr{
+
+hr.hr {
     border-bottom: 1px solid rgba($color: #26272d, $alpha: 0.05);
     width: 1170px;
     margin-top: 145px;
     margin-bottom: 42px;
 }
 
-.custom-heading{
-     font-family: 'Myria-Pro';
+.custom-heading {
+    font-family: 'DINMedium';
     font-size: 26px;
     color: $second-color;
     margin-top: 45px;
     margin-bottom: 50px;
 }
-.paragraph{
-    font-family:'MyriadArabic';
+
+.paragraph {
+    font-family: 'DINMedium';
     font-size: 18px;
     line-height: 2;
     color: $p-color;
     max-width: 489px;
 }
-.column>p.paragraph:first-of-type{
+
+.column > p.paragraph:first-of-type {
     margin-bottom: 40px;
 }
 
-.r-margin{
+.r-margin {
     margin-left: 0;
     margin-right: 0;
 }
-.feature2{
+
+.feature2 {
     background-color: $primary-color;
     padding-left: 18px;
     position: relative;
 }
-.feature2 .column{
-    padding-left:218px; 
+
+.feature2 .column {
+    padding-left: 130px;
 }
-.feature2 .column .paragraph, .feature3 .column .paragraph{
+
+.feature2 .column .paragraph, .feature3 .column .paragraph {
     max-width: unset;
 }
-.heading2{
+
+.heading2 {
     font-size: 42px;
     margin-top: 224px;
     max-width: 486px;
     line-height: 1.5;
 }
 
-.passcode{
-    margin-top: 135px;
-    //position: relative;
-   // left: calc(50% - 394px);
+.feature2 .custom-heading {
+    margin-top: 205px;
 }
-.m-passcode>img{
+
+.passcode {
+    margin-top: 76px;
+
+    //position: relative;
+    // left: calc(50% - 394px);
+}
+
+.m-passcode > img {
     margin-top: 86px;
     position: relative;
-    left: 28%;
-   // width: 905px;
-   // height: 772px;
+    left: 21%;
+    max-width: 124%;
 }
-.passcode .btn-app{
+
+.passcode .btn-app {
     padding: 18px 26px 16px 19px;
     margin-left: 20px;
 }
-.passcode .btn-app >span{
+
+.passcode .btn-app > span {
     padding-left: 77px;
 }
 
-.passcode .custom-btn{
+.passcode .custom-btn {
     padding: 18px 44px 16px 44px;
-    
 }
-.passcode .custom-btn:hover,.passcode .custom-btn:focus, .passcode .custom-btn:active, .passcode .custom-btn:focus:active{
+
+.passcode .custom-btn:hover, .passcode .custom-btn:focus, .passcode .custom-btn:active, .passcode .custom-btn:focus:active {
     color: $primary-color;
     background-color: $bg-button;
-    border: 1px solid  $bg-button;
+    border: 1px solid $bg-button;
     transition-property: color,background-color;
     transition-duration: 0.3s;
 }
-.feature3{
+
+.feature3 {
     background-color: $primary-color;
     padding-top: 207px;
     padding-bottom: 198px;
 }
 
-
-.feature3 .WorldMap{
-    position: relative;
-    right: 2%;
-} 
-
-.feature3 .column{
-    padding-right: 218px;
+.partner {
+    display: flex;
 }
 
-.feature3 .heading2{
+.feature3 .WorldMap {
+    position: relative;
+    right: -17%;
+}
+
+.feature3 .column {
+    padding-right: 175px;
+    padding-left: 100px;
+}
+
+.feature3 .heading2 {
     margin-top: 0;
 }
-.p-small{
-    font-family: 'MyriadArabic';
+
+.p-small {
+    font-family: 'DINMedium';
     margin-top: 100px;
     margin-left: 31%;
     color: $second-color;
-
 }
-ul.list-inline.text-right{
+
+ul.list-inline.text-right {
     margin-left: 28%;
     margin-top: 31px;
 }
-.feature4{
+
+.feature4 {
     background-color: $third-color;
     position: relative;
 }
-.feature4 .heading2{
+
+.feature4 .heading2 {
     margin-top: 142px;
     max-width: 100%;
 }
+
 /*.feature4 .r-margin .col-xs-12{
     position: relative;
 }*/
-hr.sm-hr{
+hr.sm-hr {
     border-top: 2px solid $bg-button;
     width: 50px;
     margin-top: 48px;
     margin-bottom: 46px;
 }
-h6.h-small{
+
+h6.h-small {
     color: $p-color;
-    font-family: 'MyriadArabic';
+    font-family: 'DINMedium';
     margin-bottom: 45px;
 }
-.landing-screen .col-sm-4{
+
+.landing-screen .col-sm-4 {
     padding-left: 0;
     padding-right: 0;
 }
+
 .landing-screen img {
     max-width: 100%;
 }
-.landing-screen {   
-   position: relative;
-   /*display: flex;
-   //flex-flow: column wrap;
-   flex-direction: row;
-   justify-content: flex-end;
-   */ 
+
+.landing-screen {
+    position: relative;
+
+    /*display: flex;
+    //flex-flow: column wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    */
 }
+
 img.L-S4 {
     position: relative;
     right: 1%;
     margin-top: 16%;
-   // width:284px;
+    width: 55%;
 }
 
-img.L-S3{
-   // width: 438px;
+img.L-S3 {
     position: absolute;
     top: 11%;
     right: 37%;
+    width: 85%;
 }
-/*
-img.L-S3 {
-    position: relative;
-    left: 26%;
-}
-*/
+
 img.L-S {
     position: relative;
     right: 2%;
-}
-
-img.L-S1 {
-    margin-top: 16%;
-    position: relative;
-    //top: 10%;
-    right: 42%;
+    width: 93%;
 }
 
 img.L-S2 {
     position: absolute;
     top: 11%;
     left: 40%;
+    width: 85%;
 }
 
-.GitApp{
+img.L-S1 {
+    margin-top: 16%;
+    position: relative;
+    right: 40%;
+    width: 60.4%;
+}
+
+.GitApp {
     background-color: $third-color;
     position: relative;
     padding-bottom: 131px;
 }
 
-.GitApp .custom-heading{
+.GitApp .custom-heading {
     font-size: 42px;
 }
-.GitApp  h6.h-small:first-child {
-    color: rgba($h-color,0.50);
+
+.GitApp h6.h-small:first-child {
+    color: rgba($h-color, 0.5);
 }
-.GitApp  h6.h-small:last-of-type {
-    color: rgba($h-color,0.30);
+
+.GitApp h6.h-small:last-of-type {
+    color: rgba($h-color, 0.3);
 }
-.invite-input{
-    background-color: rgba($third-color,0.20);
+
+.invite-input {
+    background-color: rgba($third-color, 0.2);
     border-radius: 25px;
     border: 1px solid $brder-color;
     width: 502px;
@@ -368,10 +410,10 @@ img.L-S2 {
     margin-bottom: 69px;
     display: inline-block;
     padding-top: 3px;
-
 }
+
 input.invite {
-    font-family: 'MyriadArabic';
+    font-family: 'DINMedium';
     font-size: 16px;
     background-color: transparent;
     width: 330px;
@@ -381,6 +423,7 @@ input.invite {
     padding-right: 7px;
     position: relative;
     bottom: 13%;
+
     /*background-color: rgba($third-color,0.20);
     border-radius: 25px;
     border: 1px solid $brder-color;
@@ -389,11 +432,13 @@ input.invite {
     line-height: 50px;
     margin-bottom: 69px; */
 }
-input.invite:focus{
+
+input.invite:focus {
     outline: none;
 }
+
 button.btn.Form-submit {
-    font-family: 'MyriadArabic';
+    font-family: 'DINMedium';
     font-size: 16px;
     color: $primary-color;
     background-color: $g-color;
@@ -404,22 +449,25 @@ button.btn.Form-submit {
     padding-left: 24px;
     float: left;
     margin-left: 1px;
+
     //position: absolute;
     //left: 552px;
-   // bottom: 140px;
+    // bottom: 140px;
 }
 
-.Form-submit >span{
+.Form-submit > span {
     padding-left: 42px;
 }
+
 label#email-error {
     position: absolute;
     bottom: 27%;
     left: 45%;
     color: $g-color;
 }
-.btn-app2{
-    font-family: 'MyriadArabic';
+
+.btn-app2 {
+    font-family: 'DINMedium';
     font-size: 23px;
     color: $primary-color;
     background-color: #131315;
@@ -429,62 +477,69 @@ label#email-error {
     padding-right: 27px;
     padding-left: 71px;
     position: absolute;
-    left:calc(50% - 122px);
+    left: calc(50% - 122px);
     display: block;
     transition-property: background-color,color;
-    transition-duration: 0.3s
-    
-    
+    transition-duration: 0.3s;
 }
-.btn-app2:hover,.btn-app2:focus,.btn-app2:active,.btn-app2:focus:active{
+
+.btn-app2:hover, .btn-app2:focus, .btn-app2:active, .btn-app2:focus:active {
     background-color: transparent;
     border-color: #131315;
-    
 }
-.m-r{
+
+.m-r {
     line-height: 25px;
     display: inline-block;
     margin-right: 18px;
     text-align: right;
 }
-.btn-app2 .d-f{
-    font-size:12px;  
+
+.btn-app2 .d-f {
+    font-size: 12px;
 }
 
-i.fa.fa-apple.fa-2x {   
-   position: relative;
-   bottom: 4px;
+i.fa.fa-apple.fa-2x {
+    position: relative;
+    bottom: 4px;
 }
+
 //customer section
-.customers{
+.customers {
     background-color: $primary-color;
     position: relative;
 }
+
 #carousel-customers {
     padding-top: 132px;
-    padding-bottom: 128px ;   
+    padding-bottom: 128px;
 }
+
 #carousel-customers .carousel-control {
     background: none;
-    color: rgba($controller,0.20);
+    color: rgba($controller, 0.2);
     font-size: 2.3em;
     text-shadow: none;
     margin-top: 175px;
 }
+
 #carousel-customers .carousel-control.left {
     right: -60px;
 }
+
 #carousel-customers .carousel-control.right {
     left: -60px;
 }
+
 #carousel-customers .carousel-indicators {
     position: relative;
     margin-bottom: 75px;
-
 }
+
 #carousel-customers .carousel-indicators li {
     width: 112px;
     height: 112px;
+
     //cursor: pointer;
     border: none;
     border-radius: 50px;
@@ -493,7 +548,7 @@ i.fa.fa-apple.fa-2x {
     transition: all 0.4s;
 }
 
-#carousel-customers .carousel-indicators li:nth-child(2){
+#carousel-customers .carousel-indicators li:nth-child(2) {
     margin-right: 130px;
     margin-left: 130px;
 }
@@ -507,168 +562,186 @@ i.fa.fa-apple.fa-2x {
     overflow: hidden;
 }
 
-.h1-customer{
+.h1-customer {
     font-size: 32px;
     color: $second-color;
     margin-bottom: 56px;
 }
 
-.p-customer{
+.p-customer {
     max-width: 100%;
     margin-bottom: 63px;
 }
 
-.rating .active{
+.rating .active {
     color: #f2bc3b;
 }
 
-.carousel-p .p-small{
+.carousel-p .p-small {
     margin-left: 0;
     margin-top: 72px;
     margin-bottom: 0;
 }
+
 //end customer section
 //plan section
-.plan{
+.plan {
     background-color: $bg-color;
     padding-top: 160px;
     position: relative;
+
     //z-index: 0;
 }
-.switch1
- {  max-width: 215px;
+
+.switch1 {
+    max-width: 215px;
     border: 1px solid $border2;
     border-radius: 25px;
-    background-color: rgba($color:#3b55e6, $alpha: 0.015);
+    background-color: rgba($color: #3b55e6, $alpha: 0.015);
     margin-top: 22px;
-    margin-bottom: 77px; 
-    }
-.switch2 > span, .switch-toggle > span {  
-    color: #000000; 
-}
-.switch2 span span, .switch2 label, .switch-toggle span span, .switch-toggle label {  
-    color: #2b2b2b; 
+    margin-bottom: 77px;
 }
 
-.switch-toggle a, 
-.switch2 span span { 
-    display: none; 
+.switch2 > span, .switch-toggle > span {
+    color: #000000;
 }
 
-.switch2 { 
-    display: block; 
-    height: 42px; 
-    position: relative; 
-    overflow: visible; 
-    padding: 0px; 
-    margin-left:0px; 
+.switch2 span span, .switch2 label, .switch-toggle span span, .switch-toggle label {
+    color: #2b2b2b;
 }
+
+.switch-toggle a,
+.switch2 span span {
+    display: none;
+}
+
+.switch2 {
+    display: block;
+    height: 42px;
+    position: relative;
+    overflow: visible;
+    padding: 0px;
+    margin-left: 0px;
+}
+
 .switch2 * {
-    box-sizing: border-box; 
-}
-.switch2 a { 
-    display: block; 
-    transition: all 0.3s ease-out 0s; 
+    box-sizing: border-box;
 }
 
-.switch2 label, 
-.switch2 > span { 
-    line-height: 30px; 
+.switch2 a {
+    display: block;
+    transition: all 0.3s ease-out 0s;
+}
+
+.switch2 label,
+.switch2 > span {
+    line-height: 30px;
     vertical-align: middle;
 }
 
 .switch2 label {
-    font-weight: 700; 
-    margin-bottom: px; 
+    font-weight: 700;
+    margin-bottom: px;
     max-width: 100%;
 }
 
-.switch2 input { 
-    position: absolute; 
-    opacity: 0; z-index: 5; 
+.switch2 input {
+    position: absolute;
+    opacity: 0;
+    z-index: 5;
 }
+
 .switch2 input:checked ~ a {
-     right: 2%; 
-    }
-.switch2 > span { 
-    position: absolute; 
-    left: -100px; 
-    width: 100%; 
-    margin: 0px; 
-    padding-right: 100px; 
-    text-align: left; 
+    right: 2%;
 }
-.switch2 > span span { 
-    font-family: 'MyriadArabic';
+
+.switch2 > span {
+    position: absolute;
+    left: -100px;
+    width: 100%;
+    margin: 0px;
+    padding-right: 100px;
+    text-align: left;
+}
+
+.switch2 > span span {
+    font-family: 'DINMedium';
     color: $controller;
     font-size: 16px;
-    position: absolute; 
-    top: 6px; 
-    left: 0px; 
-    z-index: 5; 
-    display: block; 
-    width: 50%; 
-    margin-left: 100px; 
-    text-align: center; }
-.switch2 > span span:last-child { 
-    font-family: 'MyriadArabic';
-    font-size: 16px;
-    color:rgba($controller,0.40);
-    left: 50%; 
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    z-index: 5;
+    display: block;
+    width: 50%;
+    margin-left: 100px;
+    text-align: center;
 }
-.switch2 a { 
+
+.switch2 > span span:last-child {
+    font-family: 'DINMedium';
+    font-size: 16px;
+    color: rgba($controller, 0.4);
+    left: 50%;
+}
+
+.switch2 a {
     background-color: $primary-color;
-    border:none;
+    border: none;
     border-radius: 25px;
-    position: absolute; 
-    right: 49%; 
+    position: absolute;
+    right: 49%;
     top: 2.5px;
-    z-index: 4; 
-    display: block; 
-    width: 50%; 
-    height: 100%; 
-    padding: 0px; 
+    z-index: 4;
+    display: block;
+    width: 50%;
+    height: 100%;
+    padding: 0px;
     box-shadow: 5px 5px 30px 0px rgba(61, 61, 62, 0.15);
 }
 
-.switch2 a:hover,.switch2 a:focus,.switch2 a:hover:focus,.switch2 a:active,.switch2 a:active:focus{
-    background-color:$bg-color;
-    border:none;
+.switch2 a:hover, .switch2 a:focus, .switch2 a:hover:focus, .switch2 a:active, .switch2 a:active:focus {
+    background-color: $bg-color;
+    border: none;
     transition-property: color,background-color;
     transition-duration: 0.3s;
-
 }
-.plan .custom-heading{
+
+.plan .custom-heading {
     font-size: 42px;
     margin-bottom: 73px;
     margin-top: 49px;
 }
-.plan-p{
+
+.plan-p {
     font-size: 20px;
     margin-bottom: 80px;
     max-width: 100%;
 }
-.p-choose{
-    font-family: 'MyriadArabic';
+
+.p-choose {
+    font-family: 'DINMedium';
     font-size: 14px;
     color: $p-color;
     margin-bottom: 246px;
-
 }
-.plan-price{
+
+.plan-price {
     background-color: $primary-color;
     border-radius: 10px;
-    width:340px;
-    //height: 550px;
+    width: 340px;
 
+    //height: 550px;
 }
-.plan-price h1{
+
+.plan-price h1 {
     font-size: 32px;
     margin-bottom: 31px;
     padding-top: 62px;
 }
-button.price{
-    font-family: 'MyriadArabic';
+
+button.price {
+    font-family: 'DINMedium';
     font-size: 11px;
     color: $p-color;
     border: 1px solid #d4d4d5;
@@ -678,59 +751,70 @@ button.price{
     margin-bottom: 56px;
     background-color: transparent;
 }
-.plan-price h2{
+
+.plan-price h2 {
     font-size: 20px;
 }
-.listed{
-    font-family: 'MyriadArabic';
+
+.listed {
+    font-family: 'DINMedium';
     font-size: 16px;
     color: $controller;
     line-height: 2;
     margin-bottom: 92px;
 }
-i.fa.fa-check{
+
+i.fa.fa-check {
     color: $g-color;
     margin-left: 9px;
 }
-.plan-price .btn-app{
+
+.plan-price .btn-app {
     margin-bottom: 70px;
     width: 212px;
     height: 42px;
 }
 
- .Pro {
+.Pro {
     background-color: #ebebed;
     height: 550px;
     position: relative;
     left: 12%;
-    margin-top: 15%;   
+    margin-top: 15%;
+
     //z-index: -1;
 }
-.Pro .listed{
+
+.Pro .listed {
     margin-bottom: 50px;
 }
-.Pro h1{
+
+.Pro h1 {
     padding-top: 42px;
 }
-.Pro .btn-app{
+
+.Pro .btn-app {
     background-color: transparent;
     color: $bg-button;
 }
-.Pro .btn-app:hover{
+
+.Pro .btn-app:hover {
     color: $primary-color;
     background-color: $bg-button;
     transition-property: color,background-color;
     transition-duration: 0.3s;
 }
-.starter{
+
+.starter {
     position: absolute;
     z-index: 1;
     box-shadow: -10px 10px 23px 0px rgba(61, 61, 62, 0.15);
 }
+
 // end plan section
 
 // start subscribe section
-.subscribe{
+.subscribe {
     background-color: $primary-color;
     position: relative;
 }
@@ -739,88 +823,99 @@ i.fa.fa-check{
     left: 324px;
     bottom: 179px;
 }*/
-.subscribe input.invite{
-   // padding-right: 17px;
-   // border-color: $border3;
+.subscribe input.invite {
+    // padding-right: 17px;
+    // border-color: $border3;
     color: $controller;
 }
 
-.subscribe .p-choose{
+.subscribe .p-choose {
     margin-bottom: 85px;
 }
+
 .subscribe label#email-error {
     position: absolute;
-    top: 47%
+    top: 47%;
 }
-.subscribe hr.hr,.footer hr.hr{
+
+.subscribe hr.hr, .footer hr.hr {
     margin: 0;
-   // overflow: hidden;
+
+    // overflow: hidden;
 }
 
 // end subscribe section
 
 // footer section
-.footer{
+.footer {
     background-color: $primary-color;
     padding-top: 89px;
     padding-bottom: 89px;
 }
+
 .footer .col-xs-12.col-md-6.text-left {
     padding-left: 190px;
 }
-.footer .paragraph{
+
+.footer .paragraph {
     font-size: 14px;
     margin-top: 35px;
     margin-bottom: 60px;
     max-width: 70%;
 }
-.social-links{
+
+.social-links {
     margin-top: 40px;
     margin-bottom: 130px;
 }
-.social-links a{
-    color:rgba($second-color,0.30);
+
+.social-links a {
+    color: rgba($second-color, 0.3);
     transition-property: color;
     transition-duration: 0.3s;
 }
-.social-links a:hover,.social-links a:active,.social-links a:focus,.social-links a:active:focus{
+
+.social-links a:hover, .social-links a:active, .social-links a:focus, .social-links a:active:focus {
     outline: none;
-    color:rgba($second-color,0.50);
+    color: rgba($second-color, 0.5);
 }
-.social-links li{
+
+.social-links li {
     margin-right: 12px;
 }
-.logo-btn{
+
+.logo-btn {
     padding: 0;
 }
-.logo-btn:hover,.logo-btn:active,.logo-btn:focus,.logo-btn:active:focus{
-    color:unset;
+
+.logo-btn:hover, .logo-btn:active, .logo-btn:focus, .logo-btn:active:focus {
+    color: unset;
     outline: none;
 }
 
-.footer h6{
-    font-family: 'Myria-Pro';
+.footer h6 {
+    font-family: 'DINMedium';
     color: $second-color;
     margin-bottom: 30px;
 }
 
-.footer a{
-    font-family: 'MyriadArabic';
+.footer a {
+    font-family: 'DINMedium';
     font-size: 16px;
     color: $p-color;
     transition-property: color;
     transition-duration: 0.3s;
 }
-.footer a:hover,.footer a:active,.footer a:focus,.footer a:active:focus{
-    color:rgba($p-color,0.70);
+
+.footer a:hover, .footer a:active, .footer a:focus, .footer a:active:focus {
+    color: rgba($p-color, 0.7);
 }
-.footer li{
+
+.footer li {
     margin-bottom: 28px;
 }
+
 //end footer section
-
-
-
 
 /*
 @media only screen and (min-width: 992px) {
@@ -834,8 +929,149 @@ i.fa.fa-check{
     }
 }*/
 
+@media only screen and (min-width: 1440px) {
+    .video.custom-btn{
+        left: 10%;
+    }
+    .passcode {
+        margin-top: 135px;
+    }
+
+    .feature3 .column {
+        padding-right: 218px;
+        padding-left: unset;
+    }
+
+    .feature3 .WorldMap {
+        position: relative;
+        right: 2%;
+    }
+}
+
+@media (max-width: 1151px) and (min-width: 992px) {
+    .container {
+        width: 910px;
+    }
+
+    #custom-left > li > a {
+        margin-left: unset;
+    }
+
+    .navbar-collapse {
+        padding-right: unset;
+    }
+
+    #custom-right .btn-app {
+        padding: 10px 18px 18px 10px;
+        margin-right: 10px;
+    }
+
+    .btn-app > span {
+        padding-left: 10px;
+    }
+    .feature2 .column {
+        padding-left: 50px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+
+    .p-header {
+        font-size: 18px;
+    }
+
+    .video.custom-btn {
+        margin-top: 121px;
+        margin-bottom: 18px;
+        position: relative;
+        left: 15%;
+    }
+
+    /*.feature2 .column {
+        padding-right: 154px;
+    }*/
+    .custom-heading {
+        margin-top: 10px;
+        margin-bottom: 33px;
+    }
+
+    .heading2 {
+        font-size: 37px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+    }
+
+    .column > p.paragraph:first-of-type {
+        margin-bottom: 33px;
+    }
+
+    .passcode {
+        margin-top: 67px;
+    }
+
+    .feature3 {
+        padding-top: 170px;
+    }
+
+    .feature3 .column {
+        padding-right: 139px;
+    }
+
+    .feature2 .column .paragraph, .feature3 .column .paragraph {
+        max-width: 489px;
+    }
+
+    .p-small {
+        margin-top: 73px;
+    }
+
+    #carousel-customers .carousel-indicators li:nth-child(2) {
+        margin-right: 55px;
+        margin-left: 55px;
+    }
+
+    .h1-customer {
+        font-size: 30px;
+    }
+
+    img.L-S4 {
+        position: relative;
+        right: 1%;
+        margin-top: 16%;
+        width: 55%;
+    }
+
+    img.L-S3 {
+        position: absolute;
+        top: 11%;
+        right: 37%;
+        width: 85%;
+    }
+
+    img.L-S {
+        position: relative;
+        right: 2%;
+        width: 94%;
+    }
+
+    img.L-S2 {
+        position: absolute;
+        top: 12%;
+        left: 40%;
+        width: 84%;
+    }
+
+    img.L-S1 {
+        margin-top: 18%;
+        position: relative;
+        right: 41%;
+        width: 60%;
+    }
+}
 /* الشاشات الصغيرة فقط */
-@media (min-width: 768px) and (max-width: 992px){    
+@media (min-width: 768px) and (max-width: 991px){    
     #custom-right .btn-app { //left
         padding: 10px 13px 10px 14px;
         margin-left: 30px;
@@ -923,7 +1159,7 @@ i.fa.fa-check{
 }
 
 /* الشاشات الصغيرة والصغيرة جدا */
-@media(max-width:992px){   
+@media(max-width:991px){   
     .header,.header .overlay{
         height: 100vh;
     }
@@ -948,19 +1184,6 @@ i.fa.fa-check{
         max-width: 100%;
     }*/
     
-    
-    img.L-S4{
-        max-width: 53%;
-    }
-    img.L-S1{
-        max-width: 58%;
-    }
-    img.L-S3,img.L-S2{
-        max-width: 82%;
-    }
-    img.L-S{
-        max-width: 92%
-    }
     
 
     .feature1{
@@ -1018,13 +1241,13 @@ i.fa.fa-check{
         padding-left: 0;
     }
 }
-
 //الشاشات الصغيرة جداً
-@media(max-width:767px) {    
-    .brand{
+@media (max-width: 767px) {
+    .brand {
         bottom: 68%;
     }
-    .header .images>img {
+
+    .header .images > img {
         max-width: 81%;
     }
 
@@ -1037,74 +1260,92 @@ i.fa.fa-check{
         margin-top: -43px;
         margin-bottom: 15px;
     }
+
     video {
         max-width: 174px;
     }
-    
-    .custom-btn>i.fa {
+
+    .custom-btn > i.fa {
         margin-right: 12px;
         margin-left: 9px;
-}
-    .feature1 .column{
+    }
+
+    .feature1 .column {
         margin-top: 80px;
     }
-    .paragraph{
+
+    .paragraph {
         font-size: 16px;
-        
     }
-    .feature2 .column{
+
+    .feature2 .column {
         margin-right: 10%;
         padding-left: 15%;
     }
-    .feature2 .paragraph{
+
+    .feature2 .paragraph {
         text-align: right;
     }
-    .custom-heading{
+
+    .custom-heading {
         font-size: 24px;
     }
+
     .passcode {
         margin-top: 76px;
-    // position: static;
+
+        // position: static;
         //left: unset;
+   
     }
+
     .passcode .btn-app {
         padding: 18px 15px 16px 13px;
         margin-left: unset;
     }
+
     .passcode .custom-btn {
         padding: 18px 30px 16px 30px;
     }
-    .passcode .btn-app>span {
+
+    .passcode .btn-app > span {
         padding-left: unset;
     }
-    .m-passcode>img {
+
+    .m-passcode > img {
         margin-top: 40px;
         position: relative;
         left: 24%;
-      //  width: unset;
-       // height: unset;
+
+        //  width: unset;
+        // height: unset;
+   
     }
+
     .heading2 {
         margin-top: 12px;
         margin-bottom: 26px;
     }
-    .feature3{
+
+    .feature3 {
         padding-top: 100px;
         padding-bottom: 100px;
     }
+
     .feature3 .column {
         padding-right: 55px;
         padding-left: 10%;
-        
     }
-    
+
     ul.list-inline.text-right {
         margin-left: 0;
     }
+
     .feature3 .p-small {
         margin-left: 0;
         margin-top: 80px;
     }
+
     img.L-S3 {
         max-width: 72%;
         position: absolute;
@@ -1115,337 +1356,118 @@ i.fa.fa-check{
     img.L-S4 {
         max-width: 47%;
     }
+
     img.L-S2 {
         max-width: 73%;
         position: absolute;
         top: 11%;
         left: 36%;
     }
+
     img.L-S1 {
         max-width: 52%;
         margin-top: 14%;
         position: relative;
         right: 48%;
     }
+
     .GitApp .custom-heading {
         font-size: 28px;
     }
-    .invite-input{
+
+    .invite-input {
         width: 318px;
     }
-    input.invite{
+
+    input.invite {
         width: 186px;
     }
-    button.btn.Form-submit{
+
+    button.btn.Form-submit {
         left: 5%;
         bottom: 141px;
         width: 126px;
         padding-right: 20px;
     }
-    .Form-submit>span {
+
+    .Form-submit > span {
         padding-left: 16px;
     }
+
     #carousel-customers .carousel-indicators li {
         width: 30px;
         height: 30px;
     }
+
     #carousel-customers .carousel-indicators .active {
-        
         width: 80px;
         height: 80px;
     }
+
     #carousel-customers .carousel-control.left {
         right: -27px;
     }
+
     #carousel-customers .carousel-control.right {
         left: -27px;
     }
+
     .fa-2x {
         font-size: 1.5em;
     }
 
-    .listed{
+    .listed {
         font-size: 12px;
     }
+
     .starter {
         left: 45%;
     }
-    .plan{
+
+    .plan {
         padding-top: 20px;
     }
+
     .plan-price {
         width: 197px;
     }
+
     .Pro {
-        
         left: -46%;
         margin-top: 15%;
     }
+
     .plan-price .btn-app {
         margin-bottom: 97px;
         width: 117px;
-    
     }
-    .p-choose{
+
+    .p-choose {
         margin-bottom: 45px;
     }
-    .plan-choose{
+
+    .plan-choose {
         margin-bottom: 100px;
     }
-    label#email-error{
+
+    label#email-error {
         left: 26%;
     }
+
     /*.subscribe button.btn.Form-submit {
         left: 2px;
         bottom: 180px;
     }*/
-     hr.hr {
+    hr.hr {
         width: 332px;
     }
-    .social-links{
+
+    .social-links {
         margin-bottom: 50px;
     }
-    .left-footer{
+
+    .left-footer {
         margin-bottom: 50px;
-    }
-}
-/* توجد مشكلة عندما أضع هذه الأبعاد لايتم تطبيقها على 
-793px
- يجب أن أضع 
- 793px
- في أقل عرض حتى تتم تطبيقها 
-@media only screen and (min-width:615px) and (max-width:793px){
-    .m-passcode>img {
-        margin-top: 49px;
-        position: relative;
-        left: 10%;
-       // width: unset; 
-       // height: unset;
-       // max-width: 60%;
-    }
-    .feature3 .WorldMap {
-        position: relative;
-        right: 44%;
-        max-width: 69%;
-    }
-    
-}
-حيث أنني وضعتها بالأبعاد الموضحة في الأسفل ولكن في هذه الحالة يوجد تعارض ولم يتم تطبيق التجاوبية في هذه الحالة بشكل ممتاز
-*/
-@media (min-width:793px) and (max-width:1151px){
-    .container {
-        width: 910px;
-    }
-    #custom-left>li>a {
-        margin-left: unset;
-    }
-    .navbar-collapse{
-        padding-right: unset;
-    }
-    #custom-right .btn-app {
-        padding: 10px 18px 18px 10px;
-        margin-right: 10px;
-    }
-    .btn-app>span {
-        padding-left: 10px;
-    }
-    h1{
-        font-size: 50px;
-    }
-    .p-header{
-        font-size: 18px;
-    }
-    .video.custom-btn {
-        margin-top: 121px;
-        margin-bottom: 18px;
-        position: relative;
-        left: 15%;
-    }
-    
-    .feature2 .column {
-        padding-right: 154px;
-    }
-    .custom-heading {
-        margin-top: 10px;
-        margin-bottom: 33px;
-    }
-    .heading2 {
-        font-size: 37px;
-    }
-    .paragraph{
-        font-size: 16px;
-    }
-    .column>p.paragraph:first-of-type {
-        margin-bottom: 33px;
-    }
-    .passcode {
-        margin-top: 67px;
-    }
-    .feature3{
-        padding-top: 170px;
-    }
-    .feature3 .column {
-        padding-right: 139px;
-    }
-    .feature2 .column .paragraph, .feature3 .column .paragraph{
-        max-width: 489px;
-    }
-    .p-small{
-        margin-top: 73px;
-    }
-    
-    #carousel-customers .carousel-indicators li:nth-child(2) {
-        margin-right: 55px;
-        margin-left: 55px;
-    }
-    .h1-customer {
-        font-size: 30px;
-    }
-    
-}
-
-
-@media only screen and (min-width:794px){
-    .m-passcode>img  {
-        margin-top: 50px;
-        position: relative;
-        left: 30%;
-        max-width: 141%;
-        // width: unset;
-        // height: unset;
-        //max-width: 130%;
-    }
-    #custom-right .btn-app{
-        padding: 10px 13px 10px 14px;
-        }
-
-    .feature2 .column {
-        padding-right: 49px;
-        padding-left: 125px;
-    }
-
-    .custom-heading {
-        margin-top: 122px;
-    }
-    .passcode .btn-app>span {
-        padding-left: 10px;
-    }
-    .passcode .custom-btn {
-        padding: 18px 22px 16px 22px;
-    }
-    img.L-S4 {
-        position: relative;
-        right: 1%;
-        margin-top: 16%;
-        width: 55%;
-    }
-    img.L-S3 {
-        position: absolute;
-        top: 11%;
-        right: 37%;
-        width: 85%;
-    }
-    img.L-S {
-        position: relative;
-        right: 2%;
-        width: 94%;
-    }
-    img.L-S2 {
-        position: absolute;
-        top: 12%;
-        left: 40%;
-        width: 84%;
-    }
-    img.L-S1 {
-        margin-top: 18%;
-        position: relative;
-        right: 41%;
-        width: 60%;
-    }
-    
-} 
-
-
-/*
-@media only screen and (min-width:921px){
-    .m-passcode>img {
-        margin-top: 49px;
-        position: relative;
-        left: 10%;
-        width: unset; 
-        height: unset;
-        max-width: 60%;
-    }
-    .m-passcode>img {
-        margin-top: 122px;
-        position: relative;
-        left: 34%;
-         width: unset; 
-        height: unset; 
-        max-width: 140%;
-    }
-}*/
-
-@media only screen and (min-width:1440px){
-    .m-passcode>img {
-        margin-top: 86px;
-        width: unset;
-        height: unset;
-     // max-width: unset;
-        position: relative;
-        left: 21%;
-        max-width: 124%;
-       
-    }
-    .custom-heading {
-        margin-top: 205px;
-    }
-    #custom-right .btn-app {
-        padding: 18px 33px 18px 18px;
-    }
-    .feature2 .column {
-        padding-left: 218px;
-        padding-right:unset;
-    }
-    .passcode .btn-app>span {
-        padding-left: 77px;
-    }
-    .passcode .custom-btn {
-        padding: 18px 44px 16px 44px;
-    }
-    
-
-    img.L-S4 {
-        position: relative;
-        right: 1%;
-        margin-top: 16%;
-        width: 55%;
-    }
-    img.L-S3 {
-        position: absolute;
-        top: 11%;
-        right: 37%;
-        width: 85%;
-    }
-    img.L-S {
-        position: relative;
-        right: 2%;
-        width: 93%;
-    }
-    img.L-S2 {
-        position: absolute;
-        top: 11%;
-        left: 40%;
-        width: 85%;
-    }
-    img.L-S1 {
-        margin-top: 16%;
-        position: relative;
-        right: 40%;
-        width: 60.4%;
-    }
-    .landing-screen img {
-        max-width: unset;
     }
 }
 
