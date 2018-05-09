@@ -1294,9 +1294,6 @@ i.fa.fa-check {
     .passcode {
         margin-top: 76px;
 
-        // position: static;
-        //left: unset;
-   
     }
 
     .passcode .btn-app {
@@ -1305,7 +1302,7 @@ i.fa.fa-check {
     }
 
     .passcode .custom-btn {
-        padding: 18px 30px 16px 30px;
+        padding: 18px 20px 16px 20px;
     }
 
     .passcode .btn-app > span {
@@ -1317,9 +1314,10 @@ i.fa.fa-check {
         position: relative;
         left: 24%;
 
-        //  width: unset;
-        // height: unset;
-   
+    }
+
+    .feature2 .custom-heading {
+        margin-top: 12px;
     }
 
     .heading2 {
@@ -1335,6 +1333,9 @@ i.fa.fa-check {
     .feature3 .column {
         padding-right: 55px;
         padding-left: 10%;
+    }
+    .feature3 .heading2 {
+        margin-top: 30px;
     }
 
     ul.list-inline.text-right {
@@ -1369,6 +1370,12 @@ i.fa.fa-check {
         margin-top: 14%;
         position: relative;
         right: 48%;
+    }
+
+    img.L-S {
+        position: relative;
+        right: 7%;
+        width: 75%;
     }
 
     .GitApp .custom-heading {
@@ -1454,10 +1461,6 @@ i.fa.fa-check {
         left: 26%;
     }
 
-    /*.subscribe button.btn.Form-submit {
-        left: 2px;
-        bottom: 180px;
-    }*/
     hr.hr {
         width: 332px;
     }
